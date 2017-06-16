@@ -1,9 +1,9 @@
 ---
 layout: post
-title: A Github Page Setup
+title: The One With Github Pages
 categories: []
 tags: [github-pages]
-description: A guide for initial setup of a github page.
+description:
 comments: true
 ---
 
