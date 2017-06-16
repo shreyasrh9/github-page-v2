@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge # changed from `pygments` as github says so
+version: 0.1
 
 # Permalinks
 permalink:        pretty
@@ -30,3 +31,6 @@ author:
   # google_analytics_id: UA-27104497-1
   # google_analytics_url: 
   bio: Data Scientist @ Practo
+
+github:
+  repo: shams-sam/shams-sam.github.io
