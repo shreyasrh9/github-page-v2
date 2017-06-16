@@ -3,7 +3,7 @@ layout: post
 title: A Github Page Setup
 categories: []
 tags: [github-pages]
-description:
+description: A guide for initial setup of a github page.
 comments: true
 ---
 
@@ -20,9 +20,11 @@ Steps for setup:
 * Commit the changes.
 * Done!
 
-
 This site is build on top of the customizations by [psteadman](https://github.com/psteadman) on [lanyon](https://github.com/poole/lanyon) theme which derives from [poole](https://github.com/poole).
 Head over to the post [Using Jekyll, Poole and Lanyon to setup my github user page](http://patricksteadman.ca/2014/08/04/lanyonsetup/) for further references.
+
+Additions:
+* Adding [MathJax](http://docs.mathjax.org/) for adding equations.
 
 ## REFERENCES:
 
