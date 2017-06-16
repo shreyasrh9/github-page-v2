@@ -5,7 +5,7 @@ categories: []
 tags: [probability]
 description:
 comments: true
-mathjax:true
+mathjax: true
 ---
 
 * Trail or Experiment - The act that leads to a result with certain possibility.
