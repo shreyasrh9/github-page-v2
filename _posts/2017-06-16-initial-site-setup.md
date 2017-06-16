@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initial Github Pages Setup
+title: A Github Page Setup
 categories: []
 tags: [github-pages]
 description:
