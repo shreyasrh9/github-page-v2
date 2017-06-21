@@ -61,7 +61,7 @@ mathjax: true
 p_mb = float(input())
 p_ab = float(input())
 p_1 = float(input())
-p_rs = p_1 * (1 - p_ab * p_mb - (1-p_ab)*(1-p_mb))
+p_rs = p_1 * (1 - p_ab*p_mb - (1-p_ab)*(1-p_mb))
 print("%.6f" % p_rs)
 ```
 
