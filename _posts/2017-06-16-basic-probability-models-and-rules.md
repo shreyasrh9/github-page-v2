@@ -46,7 +46,7 @@ mathjax: true
 * Sum Rule or Marginal Probability:
   * \\(P(A) = \sum_{B} P(A\,and\,B)\\)
 
-* Example:
+* EXAMPLE:
   * M wants to go fishing this weekend to nearby lake.
   * His neighbour A is also planing to go to the same spot for fishing this weekend.
   * The probability that it will rain this weekend is \\(p_1\\).
@@ -55,9 +55,9 @@ mathjax: true
     * M will take the bus is \\(p_{mb}\\)
     * A will take the bus is \\(p_{ab}\\).
   * Travel plans of both are independent of each other and rain.
-  * What is the probability \\(p_{rs}\\) that M and A meet each other only (should not meet in bus or train) on a lake in rain?
+  * What is the probability \\(p_{rs}\\) that M and A meet each other only (should not meet in bus or train) on a lake in rain ?
 
-```
+```python
 p_mb = float(input())
 p_ab = float(input())
 p_1 = float(input())
