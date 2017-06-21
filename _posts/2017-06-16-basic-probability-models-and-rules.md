@@ -19,7 +19,7 @@ Where
 <dd>A is an event,</dd>
 <dd>S is the sample space,</dd>
 <dd>\\(E_1 ... E_n\\) are the n outcomes in A.</dd>
-<\dl>
+</dl>
 
 * if \\(E_1 ... E_n\\) are equally likely, then
 \\[P(A) = \frac{Number of outcomes in A}{Number of outcomes in S}\\]
@@ -27,4 +27,4 @@ Where
 Hence
 <dd>\\(0 \leq P(A) \leq 1\\),</dd>
 <dd>\\(P(S) = 1\\)</dd>
-<\dl>
+</dl>
