@@ -44,7 +44,7 @@ mathjax: true
   * \\(P(A \cap B) = P(A) * P(B)\\)
 
 * Sum Rule or Marginal Probability:
-  * \\(P(A) = \sum_{B} P(A\,and\,B)\\)
+  * \\(P(A) = \sum_{B} P(\text{A and B})\\)
 
 * EXAMPLE:
   * M wants to go fishing this weekend to nearby lake.
