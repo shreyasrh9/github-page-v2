@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bayes’ Rules, Conditional Probability, Chain Rule
+title: Conditional Probability and Bayes' Rule
 categories: []
 tags: [probability]
 description:
@@ -40,6 +40,31 @@ $$P(\bigcap_{i=1,..,n}E_{i}) = P(E_{n}|\bigcap_{i=1,..,n-1}E_{i})*P(\bigcap_{i=1
     * $P(X \cap Y) = P(Y \cap X) \text{ using commutative law ---[4]}$
     * $P(Y\|X) * P(X) = P(X\|Y) * P(Y)$ using [2], [3] and [4]
     * So $P(Y\|X) = \frac{P(X\|Y)*P(Y)}{P(X)}$
+
+* **EXAMPLE**:
+  * \\(p_ot\\) is probability of reaching on time when no car trouble.
+  * \\(p_ct\\) is probability of car trouble.
+  * Commute by train if car trouble occurs.
+  * N is the number of trains available.
+  * Only 2 of the N trains would reach on time.
+  * What is the probability of reaching on time.
+
+  * Explaination:
+    * \\(O\\): reach on time
+    * \\(C^c\\): car not working
+    * \\(P(O) = P(O \cap C) + P(O \cap C^c)\\)
+    * \\(P(O \cap C) = P(O\|C) * P(C) \text{ where } P(C) = 1 - P(C^c)\\)
+    * \\(P(O \cap C^c) = P(O\|C^c) * P(C^c) \text{ where } P(O\|C^c) = 2/N\\)
+
+
+```python
+p_ct = float(input())
+p_ot = float(input())
+N = float(input())
+p_rt = 2.0/N
+p_o = p_ct * p_rt + (1-p_ct) * p_ot
+print("%.6f" % p_o)
+```
 
 
 
