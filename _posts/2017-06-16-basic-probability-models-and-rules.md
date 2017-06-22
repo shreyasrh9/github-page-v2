@@ -8,11 +8,11 @@ comments: true
 mathjax: true
 ---
 
-* Trail or Experiment - The act that leads to a result with certain possibility.
+* **Trail or Experiment** - The act that leads to a result with certain possibility.
 * Sample Space	- Set of all possible outcomes of an experiment.
 * Event -	Non empty subset of a sample space.
 
-* Basic probability formula:
+* **Basic probability formula**:
   * \\(P(A) = \sum_{i=1}^n P(E_i)\\)
   * Where
     * A is an event,
@@ -28,25 +28,25 @@ mathjax: true
     * \\(0 \leq P(A) \leq 1\\),
     * \\(P(S) = 1\\)
 
-* Complement of A: All outcomes not in A.
+* **Complement of A**: All outcomes not in A.
   * \\(P(A^c) = 1 - P(A)\\)
   * Where
     * \\(A^c\\) is the compliment of A
 
-* Union and Intersection:
+* **Union and Intersection**:
   * \\(P(A \cup B) = P(A) + P(B) + P(A \cap B)\\)
 
-* Mutually Exclusive: There are no overlapping outcomes.
+* **Mutually Exclusive**: There are no overlapping outcomes.
   * \\(P(A \cap B) = 0\\)
   * \\(P(A \cup B) = P(A) + P(B)\\)
 
-* Independent: Occurence of one event does not effect the occurence of the other.
+* **Independent**: Occurence of one event does not effect the occurence of the other.
   * \\(P(A \cap B) = P(A) * P(B)\\)
 
-* Sum Rule or Marginal Probability:
+* **Sum Rule or Marginal Probability**:
   * \\(P(A) = \sum_{B} P(\text{A and B})\\)
 
-* EXAMPLE:
+* **EXAMPLE**:
   * M wants to go fishing this weekend to nearby lake.
   * His neighbour A is also planing to go to the same spot for fishing this weekend.
   * The probability that it will rain this weekend is \\(p_1\\).
@@ -65,6 +65,6 @@ p_rs = p_1 * (1 - p_ab*p_mb - (1-p_ab)*(1-p_mb))
 print("%.6f" % p_rs)
 ```
 
-## REFERENCES:
+## *REFERENCES*:
 
-<small>[Basic Probability Models and Rules](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/basic-probability-models-and-rules/tutorial/)</small>
+<small>[*Basic Probability Models and Rules*](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/basic-probability-models-and-rules/tutorial/)</small>
