@@ -16,7 +16,7 @@ denoted by \\(P(X\|Y)\\)
   * If X and Y are **mutually exclusive**: \\(P(X\|Y) = 0\\) because X and Y are disjoint events.
 
 * **Product Rule**:
-\\[P(X \cap Y) = P(X\|Y)*P(Y)\\]
+\\[P(X \cap Y) = P(X\|Y)*P(Y) \text{--- [1]}\\]
   * Implications:
     * \\(X \subseteq Y\\) implies \\(P(X\|Y) = P(X)/P(Y)\\) because \\(X \cap Y = X\\)
     * \\(Y \subseteq X\\) implies \\(P(X\|Y) = 1\\) because \\(X \cap Y = Y\\)
@@ -35,11 +35,11 @@ $$P(\bigcap_{i=1,..,n}E_{i}) = P(E_{n}|\bigcap_{i=1,..,n-1}E_{i})*P(\bigcap_{i=1
   * Where
     * \\(P(X) = P(X \cap Y) + P(X \cap Y^{c})\\) from the sum rule.
   * Derivation:
-    1. \\(P(X \cap Y) = P(X\|Y)*P(Y) \text{ using product rule}\\)
-    2. \\(P(Y \cap X) = P(Y\|X)*P(X) \text{ using product rule}\\)
-    3. \\(P(X \cap Y) = P(Y \cap X) \text{ using commutative law}\\)
-    4. (P(Y\|X)*P(X) = P(X\|Y)*P(Y) using [1], [2] and [3]
-    5. So \\(P(Y\|X) = \frac{P(X\|Y)*P(Y)}{P(X)}\\)
+    * $P(X \cap Y) = P(X\|Y)*P(Y) \text{ using [1] --- [2]}$
+    * $P(Y \cap X) = P(Y\|X)*P(X) \text{ using [1] --- [3]}$
+    * $P(X \cap Y) = P(Y \cap X) \text{ using commutative law ---[4]}$
+    * $P(Y\|X) * P(X) = P(X\|Y) * P(Y)$ using [2], [3] and [4]
+    * So $P(Y\|X) = \frac{P(X\|Y)*P(Y)}{P(X)}$
 
 
 
