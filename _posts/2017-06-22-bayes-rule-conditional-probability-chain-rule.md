@@ -58,11 +58,11 @@ $$P(\bigcap_{i=1,..,n}E_{i}) = P(E_{n}|\bigcap_{i=1,..,n-1}E_{i})*P(\bigcap_{i=1
 
 
 ```python
-p_ct = float(input()) # probability of car trouble
-p_ot = float(input()) # probability of being on time give no car trouble
-N = float(input()) # number of trains
-p_rt = 2.0/N # probability of taking the correct train
-p_o = p_ct * p_rt + (1-p_ct) * p_ot # probability of being on time
+p_ct = float(input()) # P(Car Trouble)
+p_ot = float(input()) # P(On Time | No Car Trouble)
+N = float(input()) # Number of trains
+p_rt = 2.0/N # P(Correct Train)
+p_o = p_ct * p_rt + (1-p_ct) * p_ot # P(On Time)
 print("%.6f" % p_o)
 ```
 

@@ -56,10 +56,10 @@ mathjax: true
   * What is the probability \\(p_{rs}\\) that M and A meet each other only (should not meet in bus or train) on a lake in rain ?
 
 ```python
-p_mb = float(input()) # probability of M taking bus
-p_ab = float(input()) # probability of A taking bus
-p_1 = float(input()) # probability of raining
-p_rs = p_1 * (1 - p_ab*p_mb - (1-p_ab)*(1-p_mb)) # probability of meeting at lake only.
+p_mb = float(input()) # P(M taking Bus)
+p_ab = float(input()) # P(A taking Bus)
+p_1 = float(input()) # P(Rain)
+p_rs = p_1 * (1 - p_ab*p_mb - (1-p_ab)*(1-p_mb)) # P(Meet at lake only)
 print("%.6f" % p_rs)
 ```
 
