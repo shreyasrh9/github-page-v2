@@ -1,0 +1,50 @@
+---
+layout: post
+title: Bayes’ Rules, Conditional Probability, Chain Rule
+categories: []
+tags: [probability]
+description:
+comments: true
+mathjax: true
+---
+
+* **Conditional Probability** - The probability of event X given that Y has already occurred 
+denoted by \\(P(X\|Y)\\)
+
+  * If X and Y are **independent**: \\(P(X\|Y) = P(X)\\) because event X is not dependent on event Y.
+
+  * If X and Y are **mutually exclusive**: \\(P(X\|Y) = 0\\) because X and Y are disjoint events.
+
+* **Product Rule**:
+\\[P(X \cap Y) = P(X\|Y)*P(Y)\\]
+  * Implications:
+    * \\(X \subseteq Y\\) implies \\(P(X\|Y) = P(X)/P(Y)\\) because \\(X \cap Y = X\\)
+    * \\(Y \subseteq X\\) implies \\(P(X\|Y) = 1\\) because \\(X \cap Y = Y\\)
+
+* The distributive, associative and [De Morgan's laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws){:target="_blank"} are valid for conditional probability.
+  
+\\[P(X \cup Y\|Z) = P(X\|Z) + P(Y\|Z) - P(X \cap Y\|Z)\\]
+\\[P(X^{c}\|Z) = 1-P(X\|Z)\\]
+
+* **Chain Rule**:
+
+$$P(\bigcap_{i=1,..,n}E_{i}) = P(E_{n}|\bigcap_{i=1,..,n-1}E_{i})*P(\bigcap_{i=1,..,n-1}E_{i})$$
+
+* **Bayes' Theorem**:
+\\[P(Y|X) = \frac{P(X|Y)*P(Y)}{P(X)}\\]
+  * Where
+    * \\(P(X) = P(X \cap Y) + P(X \cap Y^{c})\\) from the sum rule.
+  * Derivation:
+    1. \\(P(X \cap Y) = P(X\|Y)*P(Y) \text{ using product rule}\\)
+    2. \\(P(Y \cap X) = P(Y\|X)*P(X) \text{ using product rule}\\)
+    3. \\(P(X \cap Y) = P(Y \cap X) \text{ using commutative law}\\)
+    4. (P(Y\|X)*P(X) = P(X\|Y)*P(Y) using [1], [2] and [3]
+    5. So \\(P(Y\|X) = \frac{P(X\|Y)*P(Y)}{P(X)}\\)
+
+
+
+
+
+## *REFERENCES*:
+
+<small>[*Bayes’ rules, Conditional probability, Chain rule*](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/bayes-rules-conditional-probability-chain-rule/tutorial/){:target="_blank"}</small>

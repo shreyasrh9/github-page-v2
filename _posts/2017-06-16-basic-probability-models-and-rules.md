@@ -9,8 +9,8 @@ mathjax: true
 ---
 
 * **Trail or Experiment** - The act that leads to a result with certain possibility.
-* Sample Space	- Set of all possible outcomes of an experiment.
-* Event -	Non empty subset of a sample space.
+* **Sample Space**	- Set of all possible outcomes of an experiment.
+* **Event** -	Non empty subset of a sample space.
 
 * **Basic probability formula**:
   * \\(P(A) = \sum_{i=1}^n P(E_i)\\)
@@ -67,4 +67,4 @@ print("%.6f" % p_rs)
 
 ## *REFERENCES*:
 
-<small>[*Basic Probability Models and Rules*](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/basic-probability-models-and-rules/tutorial/)</small>
+<small>[*Basic Probability Models and Rules*](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/basic-probability-models-and-rules/tutorial/){:target="_blank"}</small>
