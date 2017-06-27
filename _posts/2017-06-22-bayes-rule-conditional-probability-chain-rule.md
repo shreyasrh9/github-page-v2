@@ -70,6 +70,6 @@ print("%.6f" % p_o)
 
 
 
-## *REFERENCES*:
+## REFERENCES:
 
-<small>[*Bayes’ rules, Conditional probability, Chain rule*](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/bayes-rules-conditional-probability-chain-rule/tutorial/){:target="_blank"}</small>
+<small>[Bayes’ rules, Conditional probability, Chain rule](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/bayes-rules-conditional-probability-chain-rule/tutorial/){:target="_blank"}</small>
