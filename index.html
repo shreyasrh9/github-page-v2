@@ -10,7 +10,7 @@ title: Home
 <li><a href="{{site.baseurl}}/notes">Notes</a></li>
 </ul>
 <div class="posts">
-{{ site.posts | jsonify }}
+{{ site | jsonify }}
   <!-- {% assign counter = 1 %} -->
 <ol>
   {% for post in site.posts %}
