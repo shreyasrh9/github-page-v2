@@ -3,14 +3,24 @@ layout: default
 title: Home
 ---
 
-<div class="img">
+<!-- <div class="img">
     <img src="http://www.gravatar.com/avatar/{{site.author.emailalt_md5}}?s=240" />
-</div>
+</div> -->
 <ul>
-<li>Currently working as a Data Scientist at Practo, a healthcare startup.</li>
-<li>Academically interested in application of ML and NLP in radiology and healthcare.</li>
-<li>Passionate about Basketball and Bikes.</li>
-<li>Love to Travel.</li>
-</li>
-</br>
-<p>Try to summarize my reads here: <a href="{{site.baseurl}}/notes">Notes</a></p>
+<li><a href="{{site.baseurl}}/notes">Notes</a></li>
+</ul>
+<div class="posts">
+<!-- {{ site.posts | jsonify }} -->
+  <!-- {% assign counter = 1 %} -->
+<ol>
+  {% for post in site.posts %}
+    <li><h4 class="post-title">
+      <!-- {{ counter }} -->
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h4></li>
+    <!-- {% assign counter = counter | plus: 1 %} -->
+  {% endfor %}
+</ol>
+</div>
