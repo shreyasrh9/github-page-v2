@@ -15,13 +15,13 @@ mathjax: true
     * S is the sample space
     * R is the set of real numbers
 
-* **Probability Mass Function**: Probability defined over a give random variable. 
-  * For a random variable X, \\(p(X=c\\) is denoted as \\(p(c)\\) and the mapping of each value in sample space to their respective probabilities is known as **pmf**
+* **Probability Mass Function**: Probability defined over a given random variable.
+  * For a random variable X, \\(p(X=c)\\) is denoted as \\(p(c)\\) and the mapping of each value in sample space to their respective probabilities is known as **pmf**.
   * For all values c that are not is sample space \\(p(c) = 0\\) because it is pointing to an empty set.
   * Also, \\(0 \leq p(c) \leq 1\\)
 
 * **Commutative Distribution Function**: Probability defined over an inequality such as \\(X \leq c\\) gives probabilities of all the events that satisfy the condition from \\(-\infty\\) to c i.e. the probability value estimate for X less than or equal to c. Mathematically,
-\\[CD(c) = \sum_b p(b)\text{ for all } -\infty \leq b \leq c \\]
+\\[CD(c) = \sum_b p(b)\text{ for all } -\infty \leq b \leq c \tag{1}\\]
 
 * **Explaination**:
   * Set has 5 boys and 5 girls.
@@ -42,6 +42,54 @@ mathjax: true
     * value 1 : a = 0 means that no girl is selected which implies that k boys are selected out of the total B boys. The number of ways this can be accomplished is given by \\(C_k^B = \frac{B!}{k! (B-k)!}\\) implies \\(C_3^5 = \frac{5!}{3! (5-3)!} = 10\\) for B = 5 and k = 3.
     * For commutative distribution \\(CD(2) = p(0) + p(1) + p(2) = 11/12\\).
     * Similarly the value of \\(p(a)\\) and \\(CD(a)\\) at other values of \\(a\\) can be calculated.
+
+* **Random Variable Metrics**:
+  * **Expected Value**:
+    * The average or mean value calculated over all the possible outcomes of the random variable.
+    \\[E(X) = \sum_n v_i * p(v_i) \tag{2}\\]
+    * X is the random variable.
+    * \\(v_i\\) is the value the random variable takes with probability \\(p(v_i)\\).
+    * sample space size is  n.
+    * often represented by \\(\mu\\).
+    * it is a measure of central tendency of the random variable.
+    * Some other properties of expected value of a random variable:
+    \\[E(X+Y) = E(X) + E(Y) \tag{3}\\]
+    \\[E(cX + d) = c * E(X) + d \tag{4}\\]
+
+  * **Variance and Standard Deviation**:
+    * Variance gives the dispersion of probability mass around the mean value (i.e. E(X), expected value) of the random variable.
+    \\[Var(X) = E((X-\mu)^2) \tag{5}\\]
+    \\[\sigma = \sqrt (Var(X)) \tag{6}\\]
+    * \\(\sigma\\) is the standard deviation.
+    * Some other properties of variance of a random variable:
+    \\[Var(X) = E(X^2) - (E(X))^2 \tag{7}\\]
+    \\[Var(aX + b) = a^2 Var(X) \tag{8}\\]
+    \\[Var(X+Y) = Var(X) + Var(Y) \tag{9}\\] iff X and Y are independent
+
+    * Derivation of equation (7):
+
+    $$
+      \begin{align}
+        Var(X) & = E((X- \mu)^2) \\
+        & = E((X - E(X))^2) \\
+        & = E(X^2 - 2XE(X) + E(X)^2) \\
+        & = E(X^2) - 2E(X) E(X) + E(X)^2 \\
+        & = E(X^2) - E(X)^2
+      \end{align}
+    $$
+
+    * Derivation of equation (8) using equations (4, 7):
+
+    $$
+      \begin{align}
+        Var(aX + b) & = E((aX + b)^2) - (E(aX + b))^2 \\
+        & = E(a^2X^2 + 2abX + b^2) - (aE(X) + b)^2 \\
+        & = a^2 E(X^2) + 2abE(X) + b^2 - a^2 E^2(X) - 2abE(X) - b^2 \\
+        & = a^2 (E(X^2) - E^2(X)) \\
+        & = a^2 Var(X)
+      \end{align}
+    $$
+
 
 * **Some Specific Distributions**:
 
@@ -70,10 +118,22 @@ mathjax: true
     * geometric(p) is given by 
     \\[P(X=k) = (1-p)^k * p\\]
     where X = k is the event where first success occured after k failures.
+    * If X and Y follows geometric distribution with same probability p, then X + Y is also a geometric distribution.
 
+
+* **Expected Value and Variance for Distributions**:
+
+| Distribution | E(X)| Var(X) |
+|:-:|:-:|:-:|
+| Uniform | \\(\frac{n+1}{2}\\)  | \\(\frac{n^2-1}{12}\\) |
+| Bernoulli | \\(p\\) | \\(p(1-p)\\) |
+| Binomial | \\(np\\)  | \\(np(1-p)\\) |
+| Geometric | \\(\frac{1-p}{p}\\) | \\(\frac{1-p}{p^2}\\) |
 
 
 
 ## REFERENCES:
 
 <small>[Discrete Random Variables](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/discrete-random-variables/tutorial/){:target="_blank"}</small>
+<small>[Expectation and Variance](https://revisionmaths.com/advanced-level-maths-revision/statistics/expectation-and-variance){:target="_blank"}</small>
+<small>[Variance](https://en.wikipedia.org/wiki/Variance){:target="_blank"}</small>
