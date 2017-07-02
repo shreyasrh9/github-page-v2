@@ -22,8 +22,8 @@ comments: true
   * Say A sells car to B. 
   * Transaction information is recorded and shared with other systems on the blockchain network.
 * Building transactions into **Blocks**:
-  * On the network, the record is combined with other transactions to form a block and each transaction is **time-stamped**.
-  * Upon completing a block, it also gets a time-stamp.
+  * On the network, the record is combined with other transactions to form a block and each transaction is **time stamped**.
+  * Upon completion, a block also gets a time stamp.
   * All the data is sequential which helps to avoid duplicate records.
 * Connecting blocks into **Chains**:
   * Completed block is sent out across the network and appended to the chain.
