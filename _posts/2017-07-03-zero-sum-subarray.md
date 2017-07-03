@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pair Sums In An Array
+title: Zero Sum Subarrays
 categories: []
 tags: [04. array algorithms]
 description:
