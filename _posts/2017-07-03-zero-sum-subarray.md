@@ -7,7 +7,7 @@ description:
 comments: true
 ---
 
-### Q: Given an array find a pair of element with the given sum.
+### Q: Given an array find all sub arrays that have sum 0.
 
 #### Input:
 
