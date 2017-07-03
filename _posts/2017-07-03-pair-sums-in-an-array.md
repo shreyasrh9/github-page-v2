@@ -11,14 +11,14 @@ comments: true
 
 #### Input:
 
-```python3
+```python
 a = [8, 7, 2, 5, 3, 1]
 s = 10
 ```
 
 #### Output:
 
-```python3
+```python
 (8, 2)
 (7, 3)
 ```
@@ -30,7 +30,7 @@ s = 10
     * Time:     O(n)
     * Space:    O(n)
 
-```python3
+```python
 a = [8, 7, 2, 5, 3, 1]
 s = 10
 
@@ -47,7 +47,7 @@ for idx, elem in enumerate(a):
     * Time:     O(nlogn)
     * Space:    O(1)
 
-```python3
+```python
 a = [8, 7, 2, 5, 3, 1]
 s = 10
 

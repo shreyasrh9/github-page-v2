@@ -11,13 +11,13 @@ comments: true
 
 #### Input:
 
-```python3
+```python
 a = [1, 0, 1, 0, 1, 0, 0, 1]
 ```
 
 #### Output:
 
-```python3
+```python
 [0, 0, 0, 0, 1, 1, 1, 1]
 ```
 
@@ -30,9 +30,11 @@ a = [1, 0, 1, 0, 1, 0, 0, 1]
     * Time:     O(n)
     * Space:    O(1)
 
-```python3
+```python
 a = [1, 0, 1, 0, 1, 0, 0, 1]
+
 k = 0 
+
 for i in a:
     if i==0:
         a[k] = 0
@@ -46,12 +48,14 @@ for i in range(k, len(a)):
     * Time:     O(n)
     * Space:    O(1)
 
-```python3
+```python
 a = [1, 0, 1, 0, 1, 0, 0, 1]
+
 pivot = 1
 start = 0
 end = len(a) - 1
 j = 0
+
 while start < end:   
     if a[j] < pivot:
         a[j], a[start] = a[start], a[j]

@@ -11,13 +11,13 @@ comments: true
 
 #### Input:
 
-```python3
+```python
 a = [0, 1, -1, 4, 2, -3, -1, 0, 4]
 ```
 
 #### Output:
 
-```python3
+```python
 [0]
 [0, 1, -1]
 [1, -1]
@@ -34,10 +34,12 @@ a = [0, 1, -1, 4, 2, -3, -1, 0, 4]
     * Time:     O(n)
     * Space:    O(n)
 
-```python3
+```python
 a = [0, 1, -1, 4, 2, -3, -1, 0, 4]
+
 sum_idx = {}
 s = 0
+
 for i in range(len(a)):
     s = s + a[i]
     l = sum_idx.get(s, [])
