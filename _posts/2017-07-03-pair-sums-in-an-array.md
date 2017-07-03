@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pair Sum In An Array
+title: Pair Sums In An Array
 categories: []
 tags: [04. array algorithms]
 description:
