@@ -30,6 +30,9 @@ a = [0, 1, -1, 4, 2, -3, -1, 0, 4]
 * Logic:
   * Hash sums and ending indices.
   * If a sum is seen previously then the elements in between sum to 0.
+  * Complexity:
+    * Time:     O(n)
+    * Space:    O(n)
 
 ```python3
 a = [0, 1, -1, 4, 2, -3, -1, 0, 4]
