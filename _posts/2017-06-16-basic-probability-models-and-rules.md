@@ -2,7 +2,7 @@
 layout: post
 title: Basic Probability Concepts
 categories: []
-tags: [probability]
+tags: [02. probability]
 description:
 comments: true
 mathjax: true

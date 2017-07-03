@@ -8,7 +8,7 @@ title: Home
 </div> -->
 {% for tag in site.tags %}
 {% assign num = 1 %}
-<h3>{{ tag.first | capitalize }}</h3>
+<h3 class="title-case">{{ tag.first }}</h3>
     {% for post in site.posts %}
       {% if post.tags contains tag.first %}
           <h4><a href="{{site.baseurl}}{{post.url}}">{{num}}. {{ post.title }}</a></h4>
