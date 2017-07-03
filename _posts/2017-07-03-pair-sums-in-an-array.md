@@ -5,7 +5,6 @@ categories: []
 tags: [04. array algorithms]
 description:
 comments: true
-mathjax: true
 ---
 
 ### Q: Given an array find a pair of element with the given sum.
