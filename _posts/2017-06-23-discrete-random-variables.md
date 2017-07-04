@@ -2,7 +2,7 @@
 layout: post
 title: Discrete Random Variables
 categories: []
-tags: [02. probability]
+tags: [03. probability]
 description:
 comments: true
 mathjax: true

@@ -2,7 +2,7 @@
 layout: post
 title: The One With Github Pages
 categories: []
-tags: [03. setup]
+tags: [04. setup]
 description:
 comments: true
 ---
