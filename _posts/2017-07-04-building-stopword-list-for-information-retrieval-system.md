@@ -79,6 +79,37 @@ mathjax: true
 
 * A **threshold value** is to be determined to produce the best average precision. It cannont be chosen at random. It is needed to check the difference between the frequency of consecutive ranks say \\(F(r)\\) and \\(F(r+1)\\) because if the difference is big enough threshold can be set as \\(frequency \geq F(r)\\) for choosing the stopwords.
 
+```python
+# imports
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# documents is the list of documents in the collection
+
+vocab = list(set([i for sub_doc in documents for i in sub_doc.strip().split()]))
+
+# TfidfVectorizer from sklearn
+vectorizer = TfidfVectorizer(
+    stop_words=None,
+    norm=None,
+    min_df=0,
+    sublinear_tf=True,
+    token_pattern=r'(?u)\b\w+\b',
+    vocabulary=vocab
+)
+
+# calculate tf-idf
+def tf_idf(documents):
+    return vectorizer.fit_transform(documents)
+
+# create dataframe from pandas
+tf_idf = pd.DataFrame({'word': vectorizer.vocabulary, 'idf': vectorizer.idf_}, index=None)
+tf_idf.sort_values('idf')
+
+def get_word_idf(word):
+    return tf_idf.loc[tf_idf.word==word]
+```
+
 ## Term Based Random Sampling Approach
 
 * Based on how informative a particular term is.
@@ -112,6 +143,58 @@ $$w(t) = P_x . log_2 \frac{P_x}{P_c}$$
   * Because all steps here are automatic and do not require manual interventions like in the classical techniques for choosing proper threshold.
   * Classical techniques need to check \\(F(r)-F(r+1)\\) listing one by one and tf-idf graph is needed for zipf's law.
 
+```python
+# imports
+import pandas as pd
+from collections import Counter, defaultdict
+import re
+from math import log
+
+# documents is the list of documents in the collection
+# Collection Analysis
+tokens = Counter(re.findall(r'\w+', " ".join(documents)))
+def F(word):
+    return tokens.get(word)
+TOKEN_C = len(tokens)
+def P_c(word):
+    return float(F(word))/TOKEN_C
+
+# creating inverted index
+def create_index(data):
+    index = defaultdict(list)
+    for i, document in enumerate(data):
+        for token in document.strip().split():
+            index[token].append(i)
+    return index
+inv_index = create_index(documents)
+
+# sample analysis
+def P_x(word):
+    sample = [documents[i] for i in inv_index[word]]
+    tokens_sample = Counter(re.findall(r'\w+', ' '.join(sample)))
+    L_x = 0
+    for k, v in tokens_sample.items():
+        L_x += v
+    return float(tokens_sample[word])/L_x
+
+# kullback leibler divergence
+def kl_div(word):
+    p_x = P_x(word)
+    p_c = P_c(word)
+    return p_x * log(p_x/p_c, 2)
+
+# collection analysis if the dataset is not huge
+terms = list(tokens.keys())
+kl_div_val = []
+for t in terms:
+    kl_div_val.append(kl_div(t))
+
+df_kl_div = pd.DataFrame({'term': terms, 'kl_div': kl_div_val})
+df_kl_div.sort_values('kl_div')
+
+def get_word_kl_metric(word):
+    return df_kl_div.loc[df_kl_div.term == word]
+```
 
 
 ## REFERENCES:
