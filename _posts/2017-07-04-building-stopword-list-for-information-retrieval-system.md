@@ -116,7 +116,7 @@ $$w(t) = P_x . log_2 \frac{P_x}{P_c}$$
 
 ## REFERENCES:
 
-<small>[Automatically Buildinga Stopword ListforanInformationRetrieval System](http://terrierteam.dcs.gla.ac.uk/publications/rtlo_DIRpaper.pdf){:target="_blank"}</small>
+<small>[Automatically Building a Stopword List for a nInformation Retrieval System](http://terrierteam.dcs.gla.ac.uk/publications/rtlo_DIRpaper.pdf){:target="_blank"}</small>
 
 <small>[Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law){:target="_blank"}</small>
 
