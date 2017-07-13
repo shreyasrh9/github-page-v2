@@ -8,17 +8,13 @@ comments: true
 mathjax: true
 ---
 
-## What are stopwords ? 
-
+### What are stopwords ?
 * Words in a document that are **frequently occuring but meaningless** in terms of Information Retrieval (IR) are called **stopwords**.
-
 * Use of a fixed set of stopwords across various documents of different kinds is not suggested because as the context changes so does the utility of a word. For example, a word like economy might not be a stopword in context of automobiles but would be a stopword in an Economic Times Newspaper.
-
 * Also the pattern of words changes over time as the trends change, so the list of stopwords used should keep up with the trends in word usages.
-
 * They are also called **noise words** or the **negative dictionary**.
 
-## [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law)
+### [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law)
 
 * **The law states that given some corpus of natural language, the frequency of any word is inversely proportional to its rank in the frequency table** i.e. the most frequent word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.
 
@@ -30,13 +26,13 @@ mathjax: true
 
 * ZD belongs to a family of discrete power law probabiliy distributions.
 
-## Observations 
+### Observations
 
 * It can be seen from Zipf's Law that a relatively small number of words account for a very significant fraction of all text's size.
 
 * These terms make very poor index terms because of their **low discriminative value**.
 
-## [Kullback–Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
+### [Kullback–Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
 
 * It is the measure of how on probability distribution diverges from a second expected probability distribution.
 
@@ -44,7 +40,7 @@ mathjax: true
 
 * In summary it can help find the amount of information a word provides in a corpus. And the lesser the information a word has the more likely it is to be a stopword.
 
-## Classical Methods
+### Classical Methods
 
 * Zipf's Law can be mathematically represented by 
 
@@ -110,7 +106,7 @@ def get_word_idf(word):
     return tf_idf.loc[tf_idf.word==word]
 ```
 
-## Term Based Random Sampling Approach
+### Term Based Random Sampling Approach
 
 * Based on how informative a particular term is.
 

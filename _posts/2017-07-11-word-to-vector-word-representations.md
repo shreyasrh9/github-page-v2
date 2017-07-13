@@ -9,15 +9,10 @@ mathjax: true
 ---
 
 ## Introduction
-
 * Computing the **continuous vector representations** of words from very large data sets.
-
 * Current **state-of-the-art** performance on semantic and syntactic word similarities.
-
 * Classical techniques treat words as **atomic** units without any notion of similarities between them because they are represented using indices in a vocabulary (bag-of-words).
-
 * Advantages of classical techniques lie in **simplicity, robustness** and accuracy of simple model when trained on large data sets over complex models trained on less data.
-
 * Disadvantage of these methods is observed when the amount of data available to train is limited in certain fields like say, automatic speech recognition and machine translations.
 
 ## Previous Works
