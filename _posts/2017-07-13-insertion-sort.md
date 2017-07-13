@@ -75,4 +75,4 @@ public class InsertionSort {
 
 ## REFERENCES:
 
-<small>[Introduction to Algorithms 3rd Edition Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small>
+<small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small>
