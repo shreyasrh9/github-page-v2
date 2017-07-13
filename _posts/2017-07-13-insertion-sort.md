@@ -13,8 +13,9 @@ Given an array A[1...n] of length n to be sorted. The algorithm sorts the list *
 
 ![Insert Sort Visualization](/assets/2017-07-13-insertion-sort/fig-1-insertion-sort.png?raw=true)
 
-Time Complexity: O(n^2)
-Space Complexity: O(n)
+Time Complexity: \\(O(n^2)\\)
+
+Space Complexity: \\(O(n)\\)
 
 ### Pseudocode
 
