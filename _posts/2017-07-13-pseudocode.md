@@ -37,7 +37,7 @@ Loop invariants are used to prove the correctness of an algorithm. There are thr
 
 * **Termination**: It is true when the loop terminates.
 
-Loop invariant works in a way similar to **mathematical induction**. So to prove a algorithm works, invariant must work before first iteration (**base step**), and it must hold between consecutive iterations (**inductinve step**).
+Loop invariant works in a way similar to **mathematical induction**. So to prove a algorithm works, invariant must work before first iteration (**base step**), and it must hold between consecutive iterations (**inductive step**).
 
 ### General Pseudocode Conventions
 
