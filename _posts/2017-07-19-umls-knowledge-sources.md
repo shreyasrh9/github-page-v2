@@ -29,7 +29,7 @@ The setup procedure can be broken down into two steps mainly:
 
 
 * **Creating MySQL Script** (Current Version - 2017AA):
-  * Download the **Full Release** from [**UMLS Knowledge Sources**](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) which would be over **4.5GB** in size which requires licencing.
+  * Download the **Full Release** from [**UMLS Knowledge Sources**](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) which would be over **4.5GB** in size and requires licence to login and download.
   * Extract **umls-2017AA-full.zip** which requires over **30GB** free space
   * cd **2017AA-full**
   * Extract **mmsys.zip**
