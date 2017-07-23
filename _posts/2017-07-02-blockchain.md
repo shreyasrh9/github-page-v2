@@ -8,7 +8,7 @@ comments: true
 ---
 
 ### What is **blockchain** ?
-* Originally developed as a part of digital currency [**Bitcoin**](https://bitcoin.org/).
+* Originally developed as a part of digital currency [**Bitcoin**](https://bitcoin.org/){:target="_blank"}.
 * Blockchain can support a wide variety of applications such as peer-to-peer payment services, supply chain tracking etc.
 * **Digital Record**: A blockchain is a record of transactions like a traditional ledger, where a transaction can be any movement of money, goods or data.
 * **Secure**: It stores data in a way that it is virtually impossible to tamper the data without being detected by other users.

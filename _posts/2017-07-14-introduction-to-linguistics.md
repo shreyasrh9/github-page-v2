@@ -15,11 +15,11 @@ comments: true
 
 #### **Sign language is also a human language as it serves the same purposes as a spoken language.**
 
-### [Aphasia](https://en.wikipedia.org/wiki/Aphasia)
+### [Aphasia](https://en.wikipedia.org/wiki/Aphasia){:target="_blank"}
 Aphasia is an inability to comprehend and formulate language because of damage to specific brain regions. This damage is typically caused by a cerebral vascular accident (stroke), or head trauma, however these are not the only possible causes. To be diagnosed with aphasia, a person's speech or language must be significantly impaired in one (or several) of the four communication modalities following acquired brain injury or have significant decline over a short time period (progressive aphasia). **The four communication modalities are auditory comprehension, verbal expression, reading and writing, and functional communication**.
 
 
-### [Evolution of Language](https://en.wikipedia.org/wiki/Origin_of_language)
+### [Evolution of Language](https://en.wikipedia.org/wiki/Origin_of_language){:target="_blank"}
 There are two different types of theories prevailing among linguistic communities, namely
 
 * **Continuity Based Theories**: Based on the premise that human language is a complicated form of animal languages i.e. language exhibits so much complexity that one cannot imagine it simply appearing from nothing in its final form; therefore it must have evolved from earlier pre-linguistic systems among our primate ancestors.
@@ -27,7 +27,7 @@ There are two different types of theories prevailing among linguistic communitie
 * **Discontinuity Based Theories**: Based on theory that there is no connection among two but some drastic development occured that led to human langugages i.e. language, as a unique trait which cannot be compared to anything found among non-humans, must have appeared fairly suddenly during the course of human evolution.
 
 
-### [Ethnologue](https://en.wikipedia.org/wiki/Ethnologue)
+### [Ethnologue](https://en.wikipedia.org/wiki/Ethnologue){:target="_blank"}
 **Ethnologue: Languages of the World** is a web-based publication that contains information about the 7,099 living languages in its 20th edition, which was released in 2017. Ethnologue provides information on the number of speakers, location, dialects, linguistic affiliations, autonym of the language, availability of the Bible in each language and dialect described, a cursory description of revitalization efforts where reported, and an estimate of language viability using the Expanded Graded Intergenerational Disruption Scale (EGIDS).
 
 
@@ -37,7 +37,7 @@ There are two different types of theories prevailing among linguistic communitie
 **Phonology** is about the abstract aspect of sounds and it studies the **phonemes**. Phonology is about establishing what are the phonemes in a given language, i.e. those **sounds that can bring a difference in meaning between two words**. **A phoneme is a phonic segment with a meaning value**.
 
 
-### [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet)
+### [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet){:target="_blank"}
 The International Phonetic Alphabet (IPA) is an alphabetic system of phonetic notation based primarily on the Latin alphabet. It was devised by the International Phonetic Association in the late 19th century as a standardized representation of the sounds of spoken language.
 
 ### Vowels vs Consonants

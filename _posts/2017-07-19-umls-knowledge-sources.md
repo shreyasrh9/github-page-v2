@@ -7,7 +7,7 @@ description:
 comments: true
 ---
 
-### [UMLS](https://en.wikipedia.org/wiki/Unified_Medical_Language_System)
+### [UMLS](https://en.wikipedia.org/wiki/Unified_Medical_Language_System){:target="_blank"}
 The Unified Medical Language System (UMLS) is a compendium of many controlled vocabularies in the biomedical sciences (created 1986). It provides a mapping structure among these vocabularies and thus allows one to translate among the various terminology systems. It may also be viewed as a comprehensive thesaurus and ontology of biomedical concepts. UMLS further provides facilities for natural language processing. It is intended to be used mainly by developers of systems in medical informatics. 
 
 #### **UMLS consists of Knowledge Sources (databases) and a set of software tools.**
@@ -29,7 +29,7 @@ The setup procedure can be broken down into two steps mainly:
 
 
 * **Creating MySQL Script** (Current Version - 2017AA):
-  * Download the **Full Release** from [**UMLS Knowledge Sources**](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) which would be over **4.5GB** in size and requires licence to login and download.
+  * Download the **Full Release** from [**UMLS Knowledge Sources**](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html){:target="_blank"} which would be over **4.5GB** in size and requires licence to login and download.
   * Extract **umls-2017AA-full.zip** which requires over **30GB** free space
   * cd **2017AA-full**
   * Extract **mmsys.zip**
@@ -44,7 +44,7 @@ The setup procedure can be broken down into two steps mainly:
   * Select all **ENG** souces from **Source List** after selecting **INCLUDE in subset** option
   * Click **Done** in the **Action Bar** and let the process finish.
 
-* **Shortcut**: Can skip the above step by downloading the [2017AA.tar.gz](https://drive.google.com/open?id=0ByBfN7yJVa9qM3ZzeFNIWHhsVnc) directly
+* **Shortcut**: Can skip the above step by downloading the [2017AA.tar.gz](https://drive.google.com/open?id=0ByBfN7yJVa9qM3ZzeFNIWHhsVnc){:target="_blank"} directly
 
 * **Loading From MySQL Script**:
   * Go to **Destination** folder provided in previous section

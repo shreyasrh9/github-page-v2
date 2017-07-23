@@ -14,11 +14,11 @@ mathjax: true
 * Also the pattern of words changes over time as the trends change, so the list of stopwords used should keep up with the trends in word usages.
 * They are also called **noise words** or the **negative dictionary**.
 
-### [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law)
+### [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law){:target="_blank"}
 
 * **The law states that given some corpus of natural language, the frequency of any word is inversely proportional to its rank in the frequency table** i.e. the most frequent word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.
 
-* This law can be seen in action in the [Brown Corpus](https://en.wikipedia.org/wiki/Brown_Corpus) of English text, where **the** is the most frequently occuring word and accounts for 7% of the word occurences and **of** is the second most occuring word which is approximately 3.5% of the corpus, followed by **and**. And only 135 words in the vocabulary account for half the Brown Corpus.
+* This law can be seen in action in the [Brown Corpus](https://en.wikipedia.org/wiki/Brown_Corpus){:target="_blank"} of English text, where **the** is the most frequently occuring word and accounts for 7% of the word occurences and **of** is the second most occuring word which is approximately 3.5% of the corpus, followed by **and**. And only 135 words in the vocabulary account for half the Brown Corpus.
 
 * The same relationship can be seen in other rankings unrelated to language, such as population rank of cities etc.
 
@@ -32,7 +32,7 @@ mathjax: true
 
 * These terms make very poor index terms because of their **low discriminative value**.
 
-### [Kullback–Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
+### [Kullback–Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence){:target="_blank"}
 
 * It is the measure of how on probability distribution diverges from a second expected probability distribution.
 

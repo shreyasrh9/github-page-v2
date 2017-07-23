@@ -30,7 +30,7 @@ General **measure of efficiency** is speed for all algorithms. But some problems
 
 * Several NP-complete problems are similar, but not identical, to problems for which efficient algorithms are known i.e. small changes in problem statements cause a big change in efficiency of the best known algorithm.
 
-[**Travelling Salesman Problem**](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=0ahUKEwiZ9d7C8IPVAhUDQo8KHTx0ALQQFggvMAI&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTravelling_salesman_problem&usg=AFQjCNHHeqQL_wgjok2-NTUVuoNOORofXw) is a classic example of a NP-complete problem encountered in everyday application.
+[**Travelling Salesman Problem**](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=0ahUKEwiZ9d7C8IPVAhUDQo8KHTx0ALQQFggvMAI&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTravelling_salesman_problem&usg=AFQjCNHHeqQL_wgjok2-NTUVuoNOORofXw){:target="_blank"} is a classic example of a NP-complete problem encountered in everyday application.
 
 
 ## REFERENCES:
