@@ -8,14 +8,14 @@ comments: true
 mathjax: true
 ---
 
-## Introduction
+### Introduction
 * Computing the **continuous vector representations** of words from very large data sets.
 * Current **state-of-the-art** performance on semantic and syntactic word similarities.
 * Classical techniques treat words as **atomic** units without any notion of similarities between them because they are represented using indices in a vocabulary (bag-of-words).
 * Advantages of classical techniques lie in **simplicity, robustness** and accuracy of simple model when trained on large data sets over complex models trained on less data.
 * Disadvantage of these methods is observed when the amount of data available to train is limited in certain fields like say, automatic speech recognition and machine translations.
 
-## Previous Works
+### Previous Works
 
 * **Neural Network Language Model (NNLM)**:
   * Consists of input, projection, hidden and output layers.
@@ -57,7 +57,7 @@ mathjax: true
 
 * It's observed that most complexity is contributed by the non-linearity of the hidden layer in the networks.
 
-## Continuous Bag-of-Words Model (CBOW)
+### Continuous Bag-of-Words Model (CBOW)
 
 * Similar to feedforward NNLM, but the non-linear hidden layer is removed.
 
@@ -77,7 +77,7 @@ mathjax: true
 
 * Weights between the input and the projection layer is shared for all words positions in the same way as in NNLM.
 
-## Continuous Skip-Gram Model
+### Continuous Skip-Gram Model
 
 * Similar to CBOW but slight changes in training criterion.
 
@@ -92,11 +92,11 @@ mathjax: true
   * Where
     * C is the maximum distance of the words. Say, C=5 is chosen then a number \\(R \in [1, C]\\) is selected randomly and then R words from history and R from future are correct labels of the current word.
 
-## Model Architectures
+### Model Architectures
 
 ![CBOW and Skip-Gram Model Architectures](/assets/2017-07-11-word-to-vector-word-representations/fig-1-model-architectures.png?raw=true)
 
-## Results
+### Results
 
 * **Algebraic operations** on the vector representations actually give meaningful results like cosine similary of \\(vector(X)\\) is closest to \\(vector('smallest')\\) where 
 
@@ -113,7 +113,6 @@ mathjax: true
 * Skip-Gram works slightly worse than CBOW but better than NNLM on syntactic tasks and much better on semantic tasks.
 
 * **Training time** for Skip-Gram model is greater than CBOW model.
-
 
 
 ## REFERENCES:
