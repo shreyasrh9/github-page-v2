@@ -39,9 +39,10 @@ Merge(A, p, q, r):
 ### Java Code
 
 ~~~java
+
 public class MergeSort {
     
-    public int[] merge(int[] arr_l, int[] arr_r) {
+    public static int[] merge(int[] arr_l, int[] arr_r) {
         
         int[] arr = new int[arr_l.length + arr_r.length];
         int k;
@@ -74,7 +75,7 @@ public class MergeSort {
         
     }
     
-    public int[] merge_sort(int[] arr) {
+    public static int[] merge_sort(int[] arr) {
         
         if(arr.length == 1) return arr;
         
@@ -87,7 +88,7 @@ public class MergeSort {
         int right = arr.length-mid;
         int[] arr_r = new int[right];
         for(int k = 0; k < right; k++) arr_r[k] = arr[mid+k];
-
+        
         arr_l = merge_sort(arr_l);
         arr_r = merge_sort(arr_r);
         arr = merge(arr_l, arr_r);
@@ -106,10 +107,9 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        
-        MergeSort m = new MergeSort();
+
         int[] arr = {1, 9, 8, 7, 6, 10, 5, 9};
-        MergeSort.print_arr(m.merge_sort(arr));
+        MergeSort.print_arr(MergeSort.merge_sort(arr));
 
     }
 
