@@ -87,6 +87,7 @@ public class MergeSort {
         int right = arr.length-mid;
         int[] arr_r = new int[right];
         for(int k = 0; k < right; k++) arr_r[k] = arr[mid+k];
+
         arr_l = merge_sort(arr_l);
         arr_r = merge_sort(arr_r);
         arr = merge(arr_l, arr_r);
