@@ -117,6 +117,82 @@ public class MergeSort {
 
 ~~~
 
+### Java Code for Inplace Merge Sort
+
+~~~java
+
+public class MergeSortInplace {
+    
+    static int[] arr;
+    
+    public static void merge(int start, int mid, int end) {
+        
+        int[] aux_arr = new int[end-start+1];
+        int k;
+        
+        for(k = 0; k < end-start+1; k++) {
+            aux_arr[k] = arr[start + k];
+        }
+        
+        k=start;
+        int i = 0;
+        int j = mid-start+1;
+        
+        while(i <= mid-start && j <= end-start) {
+            if(aux_arr[i] <= aux_arr[j]) {
+                arr[k] = aux_arr[i];
+                i++;
+            } else {
+                arr[k] = aux_arr[j];
+                j++;
+            }
+            k++;
+        }
+        
+        while(i<= mid-start) {
+            arr[k] = aux_arr[i];
+            i++;
+            k++;
+        }
+        
+        while(j<=end-start) {
+            arr[k] = aux_arr[j];
+            j++;
+            k++;
+        }
+        
+    }
+    
+    public static void merge_sort(int start, int end) {
+        
+        if(start >= end) return;
+        int mid = start + (end-start)/2;
+        merge_sort(start, mid);
+        merge_sort(mid+1, end);
+        merge(start, mid, end);
+        
+    }
+    
+    public static void print_arr(int[] arr) {
+        
+        for(int i: arr) System.out.printf("%d ", i);
+        System.out.println();
+        
+    }
+
+    public static void main(String[] args) {
+        
+        int[] arr = {1, 3, 2, 5, 4, 7, 6, 10, 5, 8, 9};
+        MergeSortInplace.arr = arr;
+        merge_sort(0, MergeSortInplace.arr.length-1);
+        print_arr(MergeSortInplace.arr);
+
+    }
+
+}
+
+~~~
+
 ## REFERENCES:
 
 <small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small>
