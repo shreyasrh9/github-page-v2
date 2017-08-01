@@ -26,7 +26,7 @@ Head over to the post [Using Jekyll, Poole and Lanyon to setup my github user pa
 Additions:
 * Adding [MathJax](http://docs.mathjax.org/){:target="_blank"} for adding equations.
 * Adding Facebook Sidebar Icon using [font-awesome](http://fontawesome.io/).
-* Adding Search bar to search through the posts using [Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
+* Adding Search bar to search through the posts using [Tipue Search](https://github.com/jekylltools/jekyll-tipue-search).
 
 ## REFERENCES:
 
