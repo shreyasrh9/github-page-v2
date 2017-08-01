@@ -51,23 +51,23 @@ $$y = r sin(\theta) \tag{3}$$
 
 So the derivative in (1) can be expressed as,
 
-$$0 = p(x) p\,(y) r\,cos(\theta) + p(y) p\,(x)(- r\,sin(\theta)) \tag{4}$$
+$$0 = p(x) p'(y) r\,cos(\theta) + p(y) p'(x)(- r\,sin(\theta)) \tag{4}$$
 
 Using (2) and (3), (4) can be rewritten as,
 
-$$0 = p(x) p\,(y) x - p(y) p\,(x) y \tag{5}$$
+$$0 = p(x) p'(y) x - p(y) p'(x) y \tag{5}$$
 
 Differential equation can be solved by seperating the variables, so (5) becomes,
 
-$$\frac {p\,(x)} {x\,p(x)} = \frac {p\,(y)} {y\,p(y)} \tag{6}$$
+$$\frac {p'(x)} {x\,p(x)} = \frac {p'(y)} {y\,p(y)} \tag{6}$$
 
 Differential equation (6) is true for any x and y, and x and y are independent. This leads to the result that the ratio must be a constant, i.e.,
 
-$$\frac {p\,(x)} {x\,p(x)} = \frac {p\,(y)} {y\,p(y)} = C$$
+$$\frac {p'(x)} {x\,p(x)} = \frac {p'(y)} {y\,p(y)} = C$$
 
 So, 
 
-$$\frac {p\,(x)} {p(x)} = Cx \tag{7}$$
+$$\frac {p'(x)} {p(x)} = Cx \tag{7}$$
 
 Integrating (7), 
 
@@ -217,3 +217,6 @@ $$p(x) = {1 \over {\sigma \sqrt{2 \pi } } } e^{- {1 \over 2} \left( {x - \mu \ov
 ## REFERENCES:
 
 <small>[The Normal Distribution: A derivation from basic principles](http://courses.ncssm.edu/math/Talks/PDFS/normal.pdf){:target="_blank"}</small>
+
+<small>[Derivation of univariate normal distribution](http://www.planetmathematics.com/DerNorm.pdf){:target="_blank"}</small>
+
