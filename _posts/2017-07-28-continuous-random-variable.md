@@ -85,7 +85,7 @@ $$ \frac {P(X \gt n+w)} {P(X \gt w)} = \frac {e^{- \lambda (n+w)}} {e^{- \lambda
 | Distribution | \\(pdf(x)\\)| \\(cdf(x)\\) |
 |:-:|:-:|:-:|
 | \\(Uni(c, d)\\) | \\({1 \over d-c}\\)  | \\({x-c \over d-c}\\) |
-| \\(Exp( \lambda ), \, x \geq 0 \\) | \\( \lambda e^{- \lambda x} \\) | \\(1 - \lambda e^{- \lambda x}\\) |
+| \\(Exp( \lambda ), \, x \geq 0 \\) | \\( \lambda e^{- \lambda x} \\) | \\(1 - e^{- \lambda x}\\) |
 | \\(N(\mu, \sigma^2)\\) | \\({1 \over \sigma \sqrt{2 \pi} } e^{ \frac {- (x - \mu)^2} {2 \sigma^2} }\\)  | \\({1 \over 2}[1 + erf({ x - \mu \over \sigma \sqrt{2} })]\\) |
 
 

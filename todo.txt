@@ -1,0 +1,1 @@
+1. continuous random variable derivations for cdf and expected value, and variance for different distributions.

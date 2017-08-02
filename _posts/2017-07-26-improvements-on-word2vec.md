@@ -9,7 +9,6 @@ mathjax: true
 ---
 
 ### Skip-Gram Model
-
 * Training objective of skip-gram model is to deduce word representations that help in predicting the surrounding words in a sentence or a document, i.e. give a sequence of training words \\(w_1, w_2, w_3, ... , w_T\\), the objective is to maximize the average log probability, 
 
 $${1 \over T} \sum_{t=1}^T \sum_{-c \leq j \leq c, j \neq 0} log\,p(w_{t+j} | w_t)$$
