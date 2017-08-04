@@ -9,6 +9,10 @@
     opacity: 0.8
 }
 
+#share-bar:hover {
+    opacity: 1;
+}
+
 /* Title */
 #share-bar h4 {
     margin-bottom: 10px;
