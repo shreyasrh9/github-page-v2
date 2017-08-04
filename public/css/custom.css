@@ -21,3 +21,17 @@
 .title-case {
     text-transform: capitalize;
 }
+
+.show-list {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.show-list:hover {
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+}

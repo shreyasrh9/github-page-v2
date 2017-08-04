@@ -14,6 +14,7 @@ mathjax: true
   <!-- <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div> -->
   <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" placeholder="Search Post, Example: Probability"></div>
   <div style="clear: both;"></div>
+  <div class="show-list"><i class="fa fa-th-list"></i></div>
 </form>
 
 <div id="tipue_search_content"></div>
@@ -22,9 +23,18 @@ mathjax: true
 $(document).ready(function() {
   $('#tipue_search_input').tipuesearch();
 });
+
+$('#tipue_search_input').focus(function() {
+  $('.index_list').hide();
+})
+
+$('.show-list').click(function() {
+  $('#tipue_search_content').toggle();
+  $('.index_list').fadeToggle();
+})
 </script>
-<!-- 
-<div class="index_list">
+
+<div class="index_list hidden">
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
     {% assign num = 1 %}
@@ -37,4 +47,4 @@ $(document).ready(function() {
         {% endfor %}
     {% endfor %}
     </div>
-</div> -->
+</div>

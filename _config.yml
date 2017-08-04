@@ -7,9 +7,9 @@ version: 0.1
 permalink:        pretty
 
 # Setup
-title:            'Shams S'
-tagline:          'Data Scientist @ Practo'
-description:      'Learning From My Mistakes.'
+title:            'K.O.'
+tagline:          'Knowledge Organisation'
+description:      'Data Scientist @ Practo'
 url:              https://shams-sam.github.io
 baseurl:          ''
 paginate:         5
