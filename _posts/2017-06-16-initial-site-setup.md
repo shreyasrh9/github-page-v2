@@ -24,9 +24,10 @@ This site is build on top of the customizations by [psteadman](https://github.co
 Head over to the post [Using Jekyll, Poole and Lanyon to setup my github user page](http://patricksteadman.ca/2014/08/04/lanyonsetup/){:target="_blank"} for further references.
 
 Additions:
-* Adding [MathJax](http://docs.mathjax.org/){:target="_blank"} for adding equations.
-* Adding Facebook Sidebar Icon using [font-awesome](http://fontawesome.io/).
-* Adding Search bar to search through the posts using [Tipue Search](https://github.com/jekylltools/jekyll-tipue-search).
+* Added [MathJax](http://docs.mathjax.org/){:target="_blank"} for adding equations.
+* Added Facebook Sidebar Icon using [font-awesome](http://fontawesome.io/).
+* Added Search bar to search through the posts using [Tipue Search](https://github.com/jekylltools/jekyll-tipue-search).
+* Added [Social sharing buttons](https://mycyberuniverse.com/web/social-media-share-bar-jekyll-blog-website.html) for posts sharing on platforms like Reddit, Facebook etc.
 
 ## REFERENCES:
 
