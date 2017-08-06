@@ -97,7 +97,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #eee;
+  /*border-bottom: 1px solid #eee;*/
+  box-shadow: 0px 2px 5px #e3e3e3;
 }
 .masthead-title {
   margin-top: 0;
@@ -146,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: -14rem;
   width: 14rem;
+  z-index: 10;
   visibility: hidden;
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -165,6 +167,9 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar a {
   font-weight: normal;
   color: #fff;
+}
+.sidebar-item p:first-child {
+  text-align: center;
 }
 .sidebar-item {
   padding: 1rem;
@@ -212,7 +217,7 @@ a.sidebar-nav-item:focus {
   left: 1rem;
   display: block;
   width: 2.2rem;
-  padding: .5rem .65rem;
+  padding: .4rem .65rem;
   color: #505050;
   background-color: #fff;
   border-radius: 4px;
@@ -278,7 +283,6 @@ a.sidebar-nav-item:focus {
 }
 
 #sidebar-checkbox:checked + .sidebar {
-  z-index: 10;
   visibility: visible;
 }
 #sidebar-checkbox:checked ~ .sidebar,
