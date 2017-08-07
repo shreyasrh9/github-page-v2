@@ -13,7 +13,7 @@ description:      'Data Scientist @ Practo'
 url:              https://shams-sam.github.io
 baseurl:          ''
 paginate:         5
-paginate_path:    '/notes/page:num/'
+paginate_path:    '/page:num/'
 
 author:
   name: 'Shams S'
