@@ -28,6 +28,7 @@ Additions:
 * Added Facebook Sidebar Icon using [font-awesome](http://fontawesome.io/).
 * Added Search bar to search through the posts using [Tipue Search](https://github.com/jekylltools/jekyll-tipue-search).
 * Added [Social sharing buttons](https://mycyberuniverse.com/web/social-media-share-bar-jekyll-blog-website.html) for posts sharing on platforms like Reddit, Facebook etc.
+* Added [Typed.js](https://github.com/mattboldt/typed.js/) developed by [Matt Boldt](https://www.mattboldt.com) for text typing using javascript.
 
 ## REFERENCES:
 
