@@ -315,6 +315,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title {
   margin-top: 0;
+  font-size: 40px;
 }
 
 /* Meta data line below post title */
@@ -323,6 +324,7 @@ a.sidebar-nav-item:focus {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+  font-size: 15px;
 }
 
 /* Related posts */

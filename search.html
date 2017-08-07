@@ -1,0 +1,39 @@
+---
+layout: page
+title: Search
+tipue_search_active: true
+exclude_from_search: true
+mathjax: true
+---
+
+<!-- <div class="img">
+    <img src="https://www.gravatar.com/avatar/{{site.author.emailalt_md5}}?s=240" />
+</div> -->
+
+<form action="{{ page.url | relative_url }}">
+  <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" placeholder="Search Post, Example: Probability"></div>
+  <div style="clear: both;"></div>
+</form>
+
+<div id="tipue_search_content"></div>
+
+<script>
+$(document).ready(function() {
+  $('#tipue_search_input').tipuesearch();
+});
+</script>
+
+<!-- <div class="index_list hidden">
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+    {% assign num = 1 %}
+    <h3 class="title-case">{{ tag.first }}</h3>
+        {% for post in site.posts %}
+          {% if post.tags contains tag.first %}
+              <h4><a href="{{site.baseurl}}{{post.url}}">{{num}}. {{ post.title }}</a></h4>
+              {% assign num = num | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+    {% endfor %}
+    </div>
+</div> -->
