@@ -48,7 +48,21 @@
     <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/tipuesearch.css" | relative_url }}">
     <script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
     <script src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_url }}"></script>
-    {% endif %}
+  {% endif %}
+  <script src="{{ "/public/js/typed.js" | relative_url }}"></script>
+  <script>
+    $(function(){
+      var subtitles = [
+      ".github.io"
+      ];
+      $(".masthead-title small").typed({
+        strings: ['{{ site.tagline }}'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+      });
+    });
+  </script>
   <!-- Icons -->
 <!--   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png"> -->
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico?3rf3r3">
