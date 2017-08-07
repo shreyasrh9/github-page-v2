@@ -2,7 +2,7 @@
 layout: post
 title: UMLS Knowledge Sources
 categories: []
-tags: [04. setup]
+tags: [setup]
 description:
 comments: true
 ---

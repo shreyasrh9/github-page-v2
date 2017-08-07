@@ -2,7 +2,7 @@
 layout: post
 title: Improvements on Word2Vec
 categories: []
-tags: [02. NLP]
+tags: [NLP]
 description:
 comments: true
 mathjax: true

@@ -2,7 +2,7 @@
 layout: post
 title: Pair Sums In An Array
 categories: []
-tags: [05. array algorithms]
+tags: [array algorithm]
 description:
 comments: true
 ---

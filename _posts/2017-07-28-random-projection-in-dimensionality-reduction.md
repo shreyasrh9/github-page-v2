@@ -2,7 +2,7 @@
 layout: post
 title: Random Projection in Dimensionality Reduction
 categories: []
-tags: [01. Concepts]
+tags: [concept]
 description:
 comments: true
 mathjax: true

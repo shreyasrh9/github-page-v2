@@ -2,7 +2,7 @@
 layout: post
 title: The Normal Distribution
 categories: []
-tags: [03. probability]
+tags: [probability]
 description:
 comments: true
 mathjax: true

@@ -2,7 +2,7 @@
 layout: post
 title: Discounted Cumulative Gain
 categories: []
-tags: [01. Concepts]
+tags: [concept]
 description:
 comments: true
 mathjax: true

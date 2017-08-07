@@ -2,10 +2,12 @@
 layout: post
 title: The One With Github Pages
 categories: []
-tags: [04. setup]
+tags: [setup]
 description:
 comments: true
 ---
+
+
 
 [GitHub Pages](https://pages.github.com/){:target="_blank"} is a web hosting service offered by [GitHub](https://github.com/){:target="_blank"} for hosting static web pages for GitHub users, user blogs, project documentation, or even whole books.
 It is integrated with the [Jekyll](https://jekyllrb.com/){:target="_blank"} software for static web site and blog generation. The Jekyll source pages for a web site can be stored on GitHub as a Git repository, and when the repository is updated the GitHub Pages servers will automatically regenerate the site.

@@ -2,7 +2,7 @@
 layout: post
 title: Algorithms and Data Structures
 categories: []
-tags: [06. CLRS]
+tags: [CLRS]
 description:
 comments: true
 ---

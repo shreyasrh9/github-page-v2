@@ -2,7 +2,7 @@
 layout: post
 title: Merge Sort
 categories: []
-tags: [06. CLRS]
+tags: [CLRS]
 description:
 comments: true
 mathjax: true

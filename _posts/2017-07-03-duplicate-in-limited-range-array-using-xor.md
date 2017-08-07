@@ -2,7 +2,7 @@
 layout: post
 title: Duplicate In Limited Range Array (XOR)
 categories: []
-tags: [05. array algorithms]
+tags: [array algorithm]
 description:
 comments: true
 ---

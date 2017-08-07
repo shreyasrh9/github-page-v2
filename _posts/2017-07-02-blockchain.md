@@ -2,7 +2,7 @@
 layout: post
 title: Blockchain
 categories: []
-tags: [01. Concepts]
+tags: [concept]
 description:
 comments: true
 ---

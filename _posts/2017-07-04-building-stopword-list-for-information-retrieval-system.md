@@ -2,7 +2,7 @@
 layout: post
 title: Building Stopword List for Information Retrieval System
 categories: []
-tags: [02. NLP]
+tags: [NLP]
 description:
 comments: true
 mathjax: true

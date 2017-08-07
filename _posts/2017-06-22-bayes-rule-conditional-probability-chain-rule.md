@@ -2,7 +2,7 @@
 layout: post
 title: Conditional Probability and Bayes' Rule
 categories: []
-tags: [03. probability]
+tags: [probability]
 description:
 comments: true
 mathjax: true

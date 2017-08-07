@@ -2,7 +2,7 @@
 layout: post
 title: Basics of Linguistics
 categories: []
-tags: [01. Concepts]
+tags: [concept]
 description: 
 comments: true
 ---

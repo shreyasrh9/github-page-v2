@@ -2,7 +2,7 @@
 layout: post
 title: Sort Binary Array
 categories: []
-tags: [05. array algorithms]
+tags: [array algorithm]
 description:
 comments: true
 ---

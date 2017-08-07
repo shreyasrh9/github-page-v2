@@ -2,7 +2,7 @@
 layout: post
 title: Zero Sum Subarrays
 categories: []
-tags: [05. array algorithms]
+tags: [array algorithm]
 description:
 comments: true
 ---
