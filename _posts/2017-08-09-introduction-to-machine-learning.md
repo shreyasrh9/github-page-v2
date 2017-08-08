@@ -5,7 +5,6 @@ categories: []
 tags: [machine learning andrew ng]
 description:
 comments: true
-mathjax: true
 ---
 
 ### What is Machine Learning ?
