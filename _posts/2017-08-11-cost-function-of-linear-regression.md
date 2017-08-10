@@ -15,6 +15,7 @@ In linear regression, the relationships are modeled using **linear predictor fun
 
 ### Hypothesis
 The hypothesis for a univariate linear regression model is given by, 
+
 $$h_\theta (x) = \theta_0 + \theta_1\,x$$
 
 * Where 
