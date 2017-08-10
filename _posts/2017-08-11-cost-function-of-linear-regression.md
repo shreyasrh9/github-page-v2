@@ -8,9 +8,13 @@ comments: true
 mathjax: true
 ---
 
-### Hypothesis
-The hypothesis for a linear regression model is given by, 
+### Linear Regression
+Linear regression is an approach for modeling the relationship between a **scalar dependent variable** y and one or more **explanatory variables** (or **independent variables**) denoted X. The case of one explanatory variable is called **simple linear regression** or **univariate linear regression**. For more than one explanatory variable, the process is called **multiple linear regression**.
+In linear regression, the relationships are modeled using **linear predictor functions** whose unknown model parameters are estimated from the data. Such models are called linear models.
 
+
+### Hypothesis
+The hypothesis for a univariate linear regression model is given by, 
 $$h_\theta (x) = \theta_0 + \theta_1\,x$$
 
 * Where 
@@ -19,7 +23,7 @@ $$h_\theta (x) = \theta_0 + \theta_1\,x$$
   * \\(\theta_0\\) and \\(\theta_1\\) are the parameters of the  linear regression that need to be learnt
 
 ### Parameters of the Hypothesis
-In the above case of the hypothesis, \\(\theta_0\\) and \\(\theta_1\\) are the parameters of the hypothesis. In case of a univariate linear regression, \\(\theta_0\\) is the **y-intercept** and \\(\theta_1\\) is the slope of the line.
+In the above case of the hypothesis, \\(\theta_0\\) and \\(\theta_1\\) are the parameters of the hypothesis. In case of a univariate linear regression, \\(\theta_0\\) is the **y-intercept** and \\(\theta_1\\) is the **slope** of the line.
 
 Different values for these parameters will give different hypothesis function based on the values of slope and intercepts.
 
@@ -53,3 +57,5 @@ This cost function is also called the **squared error function** because of obvi
 ## REFERENCES:
 
 <small>[Machine Learning: Coursera - Cost Function](https://www.coursera.org/learn/machine-learning/lecture/rkTp3/cost-function){:target="_blank"}</small>
+
+<small>[Linear Regression: Wikipedia - Cost Function](https://en.wikipedia.org/wiki/Linear_regression){:target="_blank"}</small>
