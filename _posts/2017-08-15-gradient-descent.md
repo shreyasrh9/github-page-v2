@@ -80,6 +80,17 @@ The plot on the right is the case where **learning rate is too small**. As a res
 
 **Gradient descent can converge to a local optimum, even with a fixed learning rate.** Because as we approach the local minimum, gradient descent will automatically take smaller steps as the value of slope i.e. derivative decreases around the local minimum.
 
+![Effect of alpha on convergence](/assets/2017-08-15-gradient-descent/fig-4-effect-of-learning-rate.jpeg?raw=true)
+
+The plot above tries to summarize the effect of \\(\alpha\\) value on the **convergence** of the graident descent algorithm. 
+
+* The **yellow** plot shows the **divergence** of the algorithm when the learning rate is really high wherein the learning steps overshoot. 
+* The **green** plot shows the case where learning rate is not as large as the previous case but is high enough that the steps keep **oscillating** at a point which is not the minima.
+* The **red** plot would be the **optimum curve** for the cost drop as it drops steeply initially and then saturates very close to the optimum value.
+* The **blue** plot is the least value of \\(\alpha\\) and **converges very slowly** as the steps taken by the algorithm during update steps are very small.
+
+
+
 ### Summary
 Gradient Descent is an optimization algorithm. It can be applied to minimize any cost function J, and not just to linear regression. It is a rather generalized powerful technique widely used in learning problems to reach the optimum parameter sets. It is coupled with various learning techniques and works perfectly well with all of them. For example gradient descent works equally well with linear regression and neural networks.
 
