@@ -241,7 +241,7 @@ $$A(A^{-1}) = (A^{-1})A = I$$
 
 ### Transpose
 
-Given a matrix A, having dimension m*n and let \\(B = A^T\\) be its transpose, then B is a n*m matrix such that,
+Given a matrix A, having dimension m * n and let \\(B = A^T\\) be its transpose, then B is a n * m matrix such that,
 
 $$B_{ij} = A_{ji}$$
 
