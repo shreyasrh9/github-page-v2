@@ -253,4 +253,12 @@ It is basically the operation where each row is sequentially replaced as a colum
 
 <small>[Machine Learning: Coursera - Addition and Scalar Multiplication](https://www.coursera.org/learn/machine-learning/lecture/R4hiJ/addition-and-scalar-multiplication){:target="_blank"}</small>
 
+<small>[Machine Learning: Coursera - Matrix Vector Multiplication](https://www.coursera.org/learn/machine-learning/lecture/aQDta/matrix-vector-multiplication){:target="_blank"}</small>
+
+<small>[Machine Learning: Coursera - Matrix Matrix Multiplication](https://www.coursera.org/learn/machine-learning/lecture/dpF1j/matrix-matrix-multiplication){:target="_blank"}</small>
+
+<small>[Machine Learning: Coursera - Matrix Multiplication Properties](https://www.coursera.org/learn/machine-learning/lecture/W1LNU/matrix-multiplication-properties){:target="_blank"}</small>
+
+<small>[Machine Learning: Coursera - Inverse and Transpose](https://www.coursera.org/learn/machine-learning/lecture/FuSWY/inverse-and-transpose){:target="_blank"}</small>
+
 <small>[Matrix Multiplication: Wikipedia](https://en.wikipedia.org/wiki/Matrix_multiplication){:target="_blank"}</small>
