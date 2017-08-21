@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra
+title: Linear Algebra Review
 categories: []
 tags: [machine learning andrew ng]
 description:
@@ -219,6 +219,33 @@ $$
 $$
 
 Here, each column corresponds to a specific hypothesis.
+
+### Matrix Multiplication Properties
+
+* **Commutative Property**: Scalar multiplication is commutative while matrix multiplication is not commutative.
+* **Associative Property**: Scalar and matrix multiplication are both associative.
+* **Identity Matrix**: Denoted by I (or \\(I_{n*n}\\)) has all elements zero except for the main diagonal elements which are set to 1. It has the following properties.
+
+$$A \cdot I = I \cdot A = A$$
+
+### Inverse
+In the space of real numbers each number is said to have an inverse if the product of the number and the inverse results in the identity i.e. 1. Also not all the real numbers have an inverse, for example, the number 0 does not have an inverse, because 1/0 is undefined.
+
+Similarly, a matrix A is said to have an inverse if there exists a \\(A^{-1}\\) such that
+
+$$A(A^{-1}) = (A^{-1})A = I$$
+
+**Only square matrices have inverses.**
+
+**Matrices that do not have an inverse are called singular or degenerate matrices.**
+
+### Transpose
+
+Given a matrix A, having dimension m*n and let \\(B = A^T\\) be its transpose, then B is a n*m matrix such that,
+
+$$B_{ij} = A_{ji}$$
+
+It is basically the operation where each row is sequentially replaced as a column in the resultant matrix.
 
 ## REFERENCES:
 
