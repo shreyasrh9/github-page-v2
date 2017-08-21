@@ -11,7 +11,7 @@ mathjax: true
 ### Introduction
 The posts [Cost Function of Linear Regression]({% post_url 2017-08-11-cost-function-of-linear-regression %}){:target="_blank"} and [Gradient Descent]({% post_url 2017-08-15-gradient-descent %}){:target="_blank} introduced the linear regression cost function and the gradient descent algorithm individually. If the gradient descent is applied to the linear regression cost function would help reach an optimal solution without much manual intervention.
 
-### [Gradient Descent]({% post_url 2017-08-15-gradient-descent %}){:target="_blank}
+### [Gradient Descent]({% post_url 2017-08-15-gradient-descent %}){:target="_blank"}
 Gradient descent algorithm can be summarized as, 
 
 $$
@@ -70,6 +70,109 @@ $$
 The gradient descent technique that uses all the training examples in each step is called **Batch Gradient Descent**. This is basically the calculation of the derivative term over all the training examples as it can be seen it the equation above.
 
 The equation of linear regression can also be solved using **Normal Equations** method, but it poses a disadvantage that it does not scale very well on larger data while gradient descent does.
+
+### Implementation
+
+~~~python
+import random
+import matplotlib.pyplot as plt
+import math
+import numpy as np
+import functools
+from matplotlib.animation import FuncAnimation
+
+"""
+Dummy Data for Linear Regression
+"""
+data = [(1, 1), (2, 2), (3, 4), (4, 3), (5, 5.5), (6, 8), (7, 6), (8, 8.4), (9, 10), (5, 4)]    
+
+"""
+Plot the line using theta_values
+"""
+def plot_line(formula, x_range):
+    x = np.array(x_range)  
+    y = formula(x)
+    plt.plot(x, y)
+
+"""
+Hypothesis Function
+"""
+def h(x, theta_0, theta_1):
+    return theta_0 + theta_1 * x
+
+"""
+Partial Derivative w.r.t. theta_1
+"""
+def j_prime_theta_1(data, theta_0, theta_1):
+    result = 0
+    m = len(data)
+    for x, y in data :
+        result += (h(x, theta_0, theta_1) - y) * x
+    
+    return (1/m) * result
+
+"""
+Partial Derivative w.r.t. theta_0
+"""
+def j_prime_theta_0(data, theta_0, theta_1):
+    result = 0
+    m = len(data)
+    for x, y in data :
+        result += (h(x, theta_0, theta_1) - y)
+    return (1/m) * result
+
+"""
+Cost Function
+"""
+def j(data, theta_0, theta_1):
+    cost = 0
+    m = len(data)
+    for x, y in data:
+        cost += math.pow(h(x, theta_0, theta_1) - y, 2)
+    return (1/(2*m)) * cost
+
+"""
+Simultaneous Update
+"""
+def update_theta(data, alpha, theta_0, theta_1):
+    temp_0 = theta_0 - alpha * j_prime_theta_0(data, theta_0, theta_1)
+    temp_1 = theta_1 - alpha * j_prime_theta_1(data, theta_0, theta_1)
+    theta_0 = temp_0
+    theta_1 = temp_1
+    return theta_0, theta_1
+    
+"""
+Gradient Descent For Linear Regression
+"""
+def gradient_descent(data, alpha, tolerance, theta_0=None, theta_1=None):
+    if not theta_0:
+        theta_0 = random.random() * 100
+    if not theta_1:
+        theta_1 = random.random() * 100
+    prev_j = 10000
+    curr_j = j(data, theta_0, theta_1)
+    theta_0_history = []
+    theta_1_history = []
+    cost_history = []
+    while(abs(curr_j - prev_j) > tolerance):
+        try:
+            cost_history.append(curr_j)
+            theta_0_history.append(theta_0)
+            theta_1_history.append(theta_1)
+            theta_0, theta_1 = update_theta(data, alpha, theta_0, theta_1)
+            prev_j = curr_j
+            curr_j = j(data, theta_0, theta_1)
+        except:
+            break
+    print("Stopped with Error at %.5f" % prev_j)
+    return theta_0, theta_1
+
+theta_0, theta_1 = gradient_descent(data, alpha=0.01, tolerance=0.00001)
+~~~
+
+![Gradient Descent](/assets/2017-08-17-gradient-descent-for-linear-regression/fig-2-gradient-descent.gif?raw=true)
+
+The plot shows the adjustment of the values of \\(\theta_0\\) and \\(\theta_1\\) for fitting the best line through the given data points.
 
 
 ## REFERENCES:
