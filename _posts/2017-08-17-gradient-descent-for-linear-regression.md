@@ -78,8 +78,6 @@ import random
 import matplotlib.pyplot as plt
 import math
 import numpy as np
-import functools
-from matplotlib.animation import FuncAnimation
 
 """
 Dummy Data for Linear Regression
