@@ -254,6 +254,12 @@ theta = gradient_descent(data, 0.001, 0.001)
 
 The above plot shows the working of **multivariate linear regression to fit polynomial curve**. The higher order terms of the polynomial hypothesis are fed as separate features in the regression. The plot is the shape of a **parabola** which is consistent with the shape of curves of second order polynomials.
 
+**Note: The implementation above does not have scaled features**. It would be harder to make the algorithm converge if the features are not scaled. But if they are scaled properly, not only does the **algorithm converges better but also faster**. Below is the plot of the curve fitting by gradient descent when the features are scaled appropriately.
+
+![Multivariate Regression](/assets/2017-08-23-multivariate-linear-regression/fig-5-feature-scaling.gif?raw=true)
+
+A rough implementation of the feature scaling used to get the plot above can be found [here](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/GradientDescentForMultivariateRegression.ipynb).
+
 ## REFERENCES:
 
 <small>[Machine Learning: Coursera - Multivariate Linear Regression](https://www.coursera.org/learn/machine-learning/lecture/6Nj1q/multiple-features){:target="_blank"}</small>
