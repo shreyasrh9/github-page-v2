@@ -66,7 +66,7 @@ $$p(w_O|w_I) = \frac {exp((v_{w_O}^{'})^T v_{w_I})} {\sum_{w=1}^W exp((v_w^{'})^
 
   * NCE differs from NEG in that NCE needs the sample and numerical probabilities of the noise distribution, but NEG uses only samples.
 
-  * Both NCE and NEG have \\(P_n(w)\\) as a free parameter but **unigram distribution** U(w) raised to 3/4 power i.e. \\(U(w)^{3/4)/Z\\) is found to outperform other options like **unigram** and **uniform** distribution.
+  * Both NCE and NEG have \\(P_n(w)\\) as a free parameter but **unigram distribution** U(w) raised to 3/4 power i.e. \\(U(w)^{3/4}/Z\\) is found to outperform other options like **unigram** and **uniform** distribution.
 
 * **Subsampling of frequent words**
   * In a corpus, most frequent words can occur hundreds of millions of time such as the stopwords.
@@ -77,7 +77,7 @@ $$p(w_O|w_I) = \frac {exp((v_{w_O}^{'})^T v_{w_I})} {\sum_{w=1}^W exp((v_w^{'})^
   $$P(w_i) = 1 - \sqrt (\frac {t} {f(w_i)})$$
 
   * Where
-    * \\(f(w_i\\) is frequency of word \\(w_i\\)
+    * \\(f(w_i)\\) is frequency of word \\(w_i\\)
     * t is a chosen threshold, around \\(10^{-5}\\)
   * Subsampling formula is chosen **heuristically**
 
