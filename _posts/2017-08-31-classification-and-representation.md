@@ -140,10 +140,13 @@ $$
 
 **As the order of features is increases more and more complex decision boundaries can be achieved by logistic regression.**
 
-**Gradient Descent is used to fit the parameter values \\(\theta\\) in (9) and (12)**
+**Gradient Descent is used to fit the parameter values \\(\theta\\) in (9) and (12).**
 
 ## REFERENCES:
 
 <small>[Machine Learning: Coursera - Classification](https://www.coursera.org/learn/machine-learning/lecture/wlPeP/classification){:target="_blank"}</small>
 
 <small>[Machine Learning: Coursera - Hypothesis Representation](https://www.coursera.org/learn/machine-learning/lecture/RJXfB/hypothesis-representation){:target="_blank"}</small>
+
+
+<small>[Machine Learning: Coursera - Decision Boundary](https://www.coursera.org/learn/machine-learning/lecture/WuL1H/decision-boundary){:target="_blank"}</small>
