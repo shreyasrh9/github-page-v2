@@ -9,7 +9,7 @@ mathjax: true
 ---
 
 ### Introduction
-[Classifiction and Logistic Regression]({% post_url 2017-08-31-classification-and-representation %}){:target="_blank"} explains why logistic regression and intuition behind it. 
+[Classifiction and Logistic Regression]({% post_url 2017-08-31-classification-and-representation %}){:target="_blank"} explains why logistic regression and intuition behind it. This post is about how the model works and some intuitions behind it.
 
 
 Consider a training set having m examples,
