@@ -194,6 +194,125 @@ $$\theta := \theta - \alpha {1 \over m} X^T (g(X\theta) - y)$$
 
 **Note: Feature Scaling is as important for logistic regression as it is for linear regression as it helps the process of gradient descent.**
 
+### Implementation
+
+Below is an implementation for linear decision boundary,
+
+~~~python
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+x = []
+y = []
+for _ in range(30):
+    i = np.random.rand()
+    x.append(i)
+    y.append(round(i))
+x.append(0)
+y.append(1)
+x = np.atleast_2d(x).T
+y = np.atleast_2d(y).T
+plt.scatter(x[np.where(y==1)], y[np.where(y==1)])
+plt.scatter(x[np.where(y==0)], y[np.where(y==0)])
+
+theta = np.random.randint(1, 100, size=(2, 1))/ 1000000
+theta = np.array([[0.5], [0]])
+mul = np.matmul
+alpha = 0.6
+m = len(x)
+X = np.hstack((np.ones((len(x), 1)), x))
+
+def h(X, theta):
+    return 1 / (1 + np.exp(-mul(X, theta)))
+
+def j(X, y, theta):
+    return (-1/m) * (mul(y.T, np.log(h(X, theta))) + mul((1-y).T, np.log(1-h(X, theta))))
+
+def update(X, y, theta):
+    return theta - (alpha/m * mul(X.T, (h(X, theta) - y)))
+
+prev_j = 10000
+curr_j = j(X, y, theta)
+tolerance = 0.000001
+theta_history = [theta]
+cost_history = [curr_j]
+
+while(abs(curr_j - prev_j) > tolerance):
+    theta = update(X, y, theta)
+    theta_history.append(theta)
+    prev_j = curr_j
+    curr_j = j(X, y, theta)
+    cost_history.append(curr_j[0][0])
+print(curr_j[0][0])
+
+plt.plot(x, mul(X, theta))
+plt.show()
+~~~
+
+![Linear Decision Boundary](/assets/2017-09-02-logistic-regression-model/fig-3-linear-decision-boundary.gif?raw=true)
+
+Plot above shows how the **linear decision boundary** fits the data over the iterations. The plot below is the **contour plot** of the cost function.
+
+![Contour Plot](/assets/2017-09-02-logistic-regression-model/fig-4-contour-plot.png?raw=true)
+
+Following is an implementation of non-linear decision boundary. The code is similar to the previous implementation but the **data and the dimensions of the design matrix vary** because of higher number of features.
+
+~~~python
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.array([
+    [0,0], [0,1], [0, -1], [1, 0], [-1, 0],
+    [0,2], [0, -2], [2, 0], [-2, 0]
+])
+y = np.atleast_2d([0, 0, 0, 0, 0, 1, 1, 1, 1]).T
+plt.scatter(x[np.where(y==1),0], x[np.where(y==1), 1])
+plt.scatter(x[np.where(y==0),0], x[np.where(y==0), 1])
+
+theta = np.random.randint(1, 100, size=(5, 1))/ 100
+mul = np.matmul
+alpha = 0.1
+m = len(x)
+X = np.hstack((np.ones((len(x), 1)), x, np.power(x,2)))
+
+def h(X, theta):
+    return 1 / (1 + np.exp(-mul(X, theta)))
+
+def j(X, y, theta):
+    return (-1/m) * (mul(y.T, np.log(h(X, theta))) + mul((1-y).T, np.log(1-h(X, theta))))
+
+def update(X, y, theta):
+    return theta - (alpha/m * mul(X.T, (h(X, theta) - y)))
+
+prev_j = 10000
+curr_j = j(X, y, theta)
+tolerance = 0.000001
+theta_history = [theta]
+cost_history = [curr_j]
+
+while(abs(curr_j - prev_j) > tolerance):
+    theta = update(X, y, theta)
+    theta_history.append(theta)
+    prev_j = curr_j
+    curr_j = j(X, y, theta)
+    cost_history.append(curr_j[0][0])
+print("Regression stopped with error: %.2f" % curr_j[0][0])
+x = np.array(range(-1534,1535))/1000
+y1 = [math.sqrt((-theta[0]-(theta[3]*i*i))/theta[4]) for i in x.tolist()]
+y2 = [-math.sqrt((-theta[0]-(theta[3]*i*i))/theta[4]) for i in x.tolist()]
+plt.plot(x, y1, 'b')
+plt.axis('equal')
+plt.plot(x, y2, 'b')
+plt.title('Non-Linear Decision Boundary')
+plt.show()
+~~~
+
+The following plot shows the **circular decision boundary**.
+
+![Non-Linear Decision Boundary](/assets/2017-09-02-logistic-regression-model/fig-5-non-linear-decision-boundary.png?raw=true)
+
+A rough implementation of all these plots and some more can be found [here](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/LogisticRegression.ipynb){:target="_blank"}.
+
 ## REFERENCES:
 
 <small>[Machine Learning: Coursera - Logistic Regression Model](https://www.coursera.org/learn/machine-learning/lecture/1XG8G/cost-function){:target="_blank"}</small>
