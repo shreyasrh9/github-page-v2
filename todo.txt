@@ -1,2 +1,3 @@
 1. continuous random variable derivations for cdf and expected value, and variance for different distributions.
 2. difference between regression in statistics vs in supervised learning
+3. maximum likelyhood estimation principle

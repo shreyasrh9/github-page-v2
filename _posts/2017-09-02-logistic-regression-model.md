@@ -194,6 +194,21 @@ $$\theta := \theta - \alpha {1 \over m} X^T (g(X\theta) - y)$$
 
 **Note: Feature Scaling is as important for logistic regression as it is for linear regression as it helps the process of gradient descent.**
 
+### Advanced Optimization 
+
+Given the functions for calculation of \\(J(\theta)\\) and \\(\frac {\partial} {\partial \theta} J(\theta)\\) one can apply one of the many **optimization techniques other than gradient descent**:
+
+* Conjugate Descent
+* BFGS
+* L-BFGS
+
+| Advantage | Disadvantages |
+|:-:|:-:|
+| No need to manually pick \\(\alpha\\) | More complex |
+| Often faster than gradient descent | Harder to debug |
+
+**Most of these algorithms have a clever inner loop like line search algorithm which automatically finds out the best \\(\alpha\\) value.**
+
 ### Implementation
 
 Below is an implementation for linear decision boundary,
@@ -318,3 +333,5 @@ A rough implementation of all these plots and some more can be found [here](http
 <small>[Machine Learning: Coursera - Logistic Regression Model](https://www.coursera.org/learn/machine-learning/lecture/1XG8G/cost-function){:target="_blank"}</small>
 
 <small>[Machine Learning: Coursera - Simplified Cost Function and Gradient Descent](https://www.coursera.org/learn/machine-learning/lecture/MtEaZ/simplified-cost-function-and-gradient-descent){:target="_blank"}</small>
+
+<small>[Machine Learning: Coursera - Advanced Optimization](https://www.coursera.org/learn/machine-learning/lecture/licwf/advanced-optimization){:target="_blank"}</small>
