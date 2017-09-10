@@ -126,7 +126,7 @@ def reg_gradient_descent(data, alpha, l, tolerance, theta=[], order_of_regressio
 reg_theta, reg_cost_history, reg_theta_history = reg_gradient_descent(data, 0.01, 1, 0.0001, order_of_regression=150)
 ~~~
 
-The following plot is obtained on running a random experiment with regression of order 150, which clearly shows how the regularized hypothesis is much better fit to the data.
+The following plot is obtained on running a random experiment with **regression of order 150**, which clearly shows how the regularized hypothesis is much better fit to the data.
 
 ![Regularizated Linear Regression](/assets/2017-09-11-regularized-linear-regression/fig-1-regularized-linear-regression.png?raw=true)
 
@@ -146,7 +146,7 @@ $$\theta = \left( X^TX + \lambda \cdot L\right)^{-1}X^Ty$$
 
 If \\(m \le n\\), then the \\(X^TX\\) was **non-invertible in the unregularized case** but, \\(X^TX + \lambda I\\) does not face the same issues and is **always invertible**.
 
-The effect of regularization on regression using normal equation can be seen in the following plot.
+The effect of regularization on regression using normal equation can be seen in the following plot for **regression of order 10**.
 
 ![Regularizated Linear Regression](/assets/2017-09-11-regularized-linear-regression/fig-2-regularization-for-normal-equation.png?raw=true)
 
