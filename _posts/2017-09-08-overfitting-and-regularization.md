@@ -49,7 +49,7 @@ So the main ideas in regularization are:
 
 Mathematically, regularization is acheived by modifying the cost function as follows, 
 
-$$J(\theta) = {1 \over 2m} \sum_{i=1}^m \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda \sum_{i=1}^n \theta_j^2$$
+$$J(\theta) = {1 \over 2m} \left[ \sum_{i=1}^m \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda \sum_{j=1}^n \theta_j^2 \right]$$
 
 * Where \\(\lambda \sum_{i=1}^n \theta_j^2\\) is the regularization term and \\(\lambda\\) is called the **regularization parameter**. If noticed closely, this term mainly points to the fact that if value of \\(\theta_j\\) is increased, it would consequently increase the cost which is to be minimized during gradient descent. So it would ensure small values of the parameters as intented to prevent overfitting. **By convention \\(\theta_0\\) is not penalized but in practice it does not affect the algorithm a lot.** 
 
