@@ -113,7 +113,7 @@ The value of \\(q(w\| u, v)\\) can be interpreted as the **probability of seeing
 
 So, for any sequence \\(x_1 \cdots x_n\\) where \\(x_i \in \nu\\) for \\(i = 1 \cdots (n-1)\\) and \\(x_n = \\) STOP, the probability of the sentence under trigram language model is 
 
-$$p(x_1 \cdots x_n) = \prod_{i=1}^n q(x_i|x_{i-2}, x_{i-1} \tag{1}$$
+$$p(x_1 \cdots x_n) = \prod_{i=1}^n q(x_i|x_{i-2}, x_{i-1}) \tag{1}$$
 
 * Where \\(x_0 = x_{-1} = *\\)
 
