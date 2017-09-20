@@ -3,6 +3,9 @@ markdown:         kramdown
 highlighter:      rouge # changed from `pygments` as github says so
 version: 0.1
 
+# Exclude
+exclude: [vendor]
+
 # Permalinks
 permalink:        pretty
 
