@@ -95,7 +95,7 @@ $$
   \tag{6}
 $$ 
 
-* Where \\(\Theta^{(2)}\\) is a matrix of dimensions (1 * 4)
+* Where \\(\Theta^{(j)}\\) is a matrix of dimensions \\((s_{j+1} * (s_j + 1)) \\)
 
 **Process of calculation of activations cascading across layers is called Forward Propagation.**
 
