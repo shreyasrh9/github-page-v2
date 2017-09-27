@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neural Networks - Successor of Logistic Regression
+title: Neural Networks Theory
 categories: []
 tags: [machine learning andrew ng]
 description:
