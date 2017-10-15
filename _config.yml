@@ -10,8 +10,8 @@ exclude: [vendor]
 permalink:        pretty
 
 # Setup
-title:            'Machine Learning Medium'
-tagline:          ''
+title:            'machinelearning'
+tagline:          'medium.com'
 description:      'Data Scientist @ Practo'
 url:              http://machinelearningmedium.com
 baseurl:          ''
