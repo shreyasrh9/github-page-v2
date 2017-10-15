@@ -10,10 +10,10 @@ exclude: [vendor]
 permalink:        pretty
 
 # Setup
-title:            'shams-sam'
-tagline:          '.github.io'
+title:            'Machine Learning Medium'
+tagline:          'Machine Learning, Mathematics and Algorithms'
 description:      'Data Scientist @ Practo'
-url:              https://shams-sam.github.io
+url:              http://machinelearningmedium.com
 baseurl:          ''
 paginate:         5
 paginate_path:    '/page:num/'
