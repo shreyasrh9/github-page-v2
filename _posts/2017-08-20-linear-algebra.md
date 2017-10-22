@@ -2,8 +2,10 @@
 layout: post
 title: Linear Algebra Review
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, mathematics, andrew ng]
+description: Linear algebra is the branch of mathematics concerning vector spaces and linear mappings between such spaces
+cover: "/assets/images/linear-algebra.png"
+cover_source: "https://ka-perseus-images.s3.amazonaws.com/6eca6b57567643dd7743f2efc5c90e6bad3133d8.png"
 comments: true
 mathjax: true
 ---
@@ -98,7 +100,7 @@ $$
   \end{bmatrix}
 $$
 
-### **Matrix operation follow the BODMAS rule for the order of precedence.**
+> Matrix operation follow the BODMAS rule for the order of precedence.
 
 ### Matrix Vector Multiplication
 Consider matrix A and vector x, then the matrix-vector multiplication is given by,
@@ -156,7 +158,7 @@ $$
 $$
 
 
-### Matrix Matrix Multiplication
+### Matrix-Matrix Multiplication
 It is a binary operation that produces a matrix from two matrices. So, if A is \\(n * m\\) matrix and B is a \\(m * p\\) matrix, then their product AB is a \\(n * p\\) matrix. The m enteries along rows of A are multiplied with the m enteries along the column of B and summed to produce elements of AB. **When two linear transformations are represented by matrices, then the matrix product represents the composition of the two transformations.**
 
 $$
@@ -235,9 +237,9 @@ Similarly, a matrix A is said to have an inverse if there exists a \\(A^{-1}\\) 
 
 $$A(A^{-1}) = (A^{-1})A = I$$
 
-**Only square matrices have inverses.**
+> Only square matrices have inverses.
 
-**Matrices that do not have an inverse are called singular or degenerate matrices.**
+> Matrices that do not have an inverse are called singular or degenerate matrices.
 
 ### Transpose
 
@@ -249,16 +251,10 @@ It is basically the operation where each row is sequentially replaced as a colum
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Matrices and Vectors](https://www.coursera.org/learn/machine-learning/lecture/38jIT/matrices-and-vectors){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Addition and Scalar Multiplication](https://www.coursera.org/learn/machine-learning/lecture/R4hiJ/addition-and-scalar-multiplication){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Matrix Vector Multiplication](https://www.coursera.org/learn/machine-learning/lecture/aQDta/matrix-vector-multiplication){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Matrix Matrix Multiplication](https://www.coursera.org/learn/machine-learning/lecture/dpF1j/matrix-matrix-multiplication){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Matrix Multiplication Properties](https://www.coursera.org/learn/machine-learning/lecture/W1LNU/matrix-multiplication-properties){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Inverse and Transpose](https://www.coursera.org/learn/machine-learning/lecture/FuSWY/inverse-and-transpose){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Matrices and Vectors](https://www.coursera.org/learn/machine-learning/lecture/38jIT/matrices-and-vectors){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Addition and Scalar Multiplication](https://www.coursera.org/learn/machine-learning/lecture/R4hiJ/addition-and-scalar-multiplication){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Matrix Vector Multiplication](https://www.coursera.org/learn/machine-learning/lecture/aQDta/matrix-vector-multiplication){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Matrix Matrix Multiplication](https://www.coursera.org/learn/machine-learning/lecture/dpF1j/matrix-matrix-multiplication){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Matrix Multiplication Properties](https://www.coursera.org/learn/machine-learning/lecture/W1LNU/matrix-multiplication-properties){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Inverse and Transpose](https://www.coursera.org/learn/machine-learning/lecture/FuSWY/inverse-and-transpose){:target="_blank"}</small><br>
 <small>[Matrix Multiplication: Wikipedia](https://en.wikipedia.org/wiki/Matrix_multiplication){:target="_blank"}</small>

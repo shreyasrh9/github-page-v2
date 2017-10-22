@@ -2,8 +2,10 @@
 layout: post
 title: Gradient Descent for Linear Regression
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Application of gradient descent for optimization of a linear regression cost function and its comparison with normal equation method of finding solution
+cover: "/assets/images/gradient-descent.png"
+cover_source: "https://upload.wikimedia.org/wikipedia/commons/3/31/Gradient99.png"
 comments: true
 mathjax: true
 ---
@@ -168,7 +170,7 @@ def gradient_descent(data, alpha, tolerance, theta_0=None, theta_1=None):
 theta_0, theta_1 = gradient_descent(data, alpha=0.01, tolerance=0.00001)
 ~~~
 
-![Gradient Descent](/assets/2017-08-17-gradient-descent-for-linear-regression/fig-2-gradient-descent.gif?raw=true)
+![Gradient Descent In Action](/assets/2017-08-17-gradient-descent-for-linear-regression/fig-2-gradient-descent.gif?raw=true)
 
 The plot shows the adjustment of the values of \\(\theta_0\\) and \\(\theta_1\\) for fitting the best line through the given data points.
 

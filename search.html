@@ -16,24 +16,3 @@ mathjax: true
 </form>
 
 <div id="tipue_search_content"></div>
-
-<script>
-$(document).ready(function() {
-  $('#tipue_search_input').tipuesearch();
-});
-</script>
-
-<!-- <div class="index_list hidden">
-    {% assign sorted_tags = site.tags | sort %}
-    {% for tag in sorted_tags %}
-    {% assign num = 1 %}
-    <h3 class="title-case">{{ tag.first }}</h3>
-        {% for post in site.posts %}
-          {% if post.tags contains tag.first %}
-              <h4><a href="{{site.baseurl}}{{post.url}}">{{num}}. {{ post.title }}</a></h4>
-              {% assign num = num | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-    {% endfor %}
-    </div>
-</div> -->

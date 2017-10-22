@@ -2,8 +2,10 @@
 layout: post
 title: Supervised and Unsupervised Learning
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Supervised learning is the machine learning task of inferring a function from labeled training data
+cover: "/assets/images/supervised-learning.jpg"
+cover_source: "https://phrasee.co/wp-content/uploads/2016/03/machine-learning-3.jpg"
 comments: true
 ---
 
@@ -35,12 +37,8 @@ Unsupervised learning is a type of machine learning algorithm used to **draw inf
 
 ## REFERENCES:
 
-<small>[Supervised Learning: Wikipedia](https://en.wikipedia.org/wiki/Supervised_learning){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Supervised Learning](https://www.coursera.org/learn/machine-learning/lecture/1VkCb/supervised-learning){:target="_blank"}</small>
-
-<small>[Unsupervised Learning: Mathworks](https://www.mathworks.com/discovery/unsupervised-learning.html){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Unsupervised Learning](https://www.coursera.org/learn/machine-learning/lecture/olRZo/unsupervised-learning){:target="_blank"}</small>
-
+<small>[Supervised Learning: Wikipedia](https://en.wikipedia.org/wiki/Supervised_learning){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Supervised Learning](https://www.coursera.org/learn/machine-learning/lecture/1VkCb/supervised-learning){:target="_blank"}</small><br>
+<small>[Unsupervised Learning: Mathworks](https://www.mathworks.com/discovery/unsupervised-learning.html){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Unsupervised Learning](https://www.coursera.org/learn/machine-learning/lecture/olRZo/unsupervised-learning){:target="_blank"}</small><br>
 <small>[Cluster Analysis: Wikipedia](https://en.wikipedia.org/wiki/Cluster_analysis){:target="_blank"}</small>

@@ -2,8 +2,10 @@
 layout: post
 title: Logistic Regression Model
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Mathematics and Implementation of training a logistic regression model
+cover: "/assets/images/logistic-regression.png"
+cover_source: "http://www.onthelambda.com/wp-content/uploads/2014/07/quadratic.png"
 comments: true
 mathjax: true
 ---
@@ -192,7 +194,7 @@ $$\theta := \theta - \alpha {1 \over m} X^T (g(X\theta) - y)$$
 
 * Where X is the **design matrix**.
 
-**Note: Feature Scaling is as important for logistic regression as it is for linear regression as it helps the process of gradient descent.**
+> Note: Feature Scaling is as important for logistic regression as it is for linear regression as it helps the process of gradient descent.
 
 ### Advanced Optimization 
 
@@ -207,7 +209,7 @@ Given the functions for calculation of \\(J(\theta)\\) and \\(\frac {\partial} {
 | No need to manually pick \\(\alpha\\) | More complex |
 | Often faster than gradient descent | Harder to debug |
 
-**Most of these algorithms have a clever inner loop like line search algorithm which automatically finds out the best \\(\alpha\\) value.**
+> Most of these algorithms have a clever inner loop like line search algorithm which automatically finds out the best \\(\alpha\\) value.
 
 ### Implementation
 
@@ -330,8 +332,6 @@ A rough implementation of all these plots and some more can be found [here](http
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Logistic Regression Model](https://www.coursera.org/learn/machine-learning/lecture/1XG8G/cost-function){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Simplified Cost Function and Gradient Descent](https://www.coursera.org/learn/machine-learning/lecture/MtEaZ/simplified-cost-function-and-gradient-descent){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Logistic Regression Model](https://www.coursera.org/learn/machine-learning/lecture/1XG8G/cost-function){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Simplified Cost Function and Gradient Descent](https://www.coursera.org/learn/machine-learning/lecture/MtEaZ/simplified-cost-function-and-gradient-descent){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - Advanced Optimization](https://www.coursera.org/learn/machine-learning/lecture/licwf/advanced-optimization){:target="_blank"}</small>

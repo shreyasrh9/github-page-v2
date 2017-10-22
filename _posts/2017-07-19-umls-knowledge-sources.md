@@ -2,15 +2,17 @@
 layout: post
 title: UMLS Knowledge Sources
 categories: []
-tags: [setup]
-description:
+tags: [setup, UMLS]
+description: The Unified Medical Language System (UMLS), created in 1986, is a compendium of many controlled vocabularies in the biomedical sciences.
+cover: "/assets/images/dictionary.jpg"
+cover_source: "http://lewisallen.org/wp-content/uploads/2015/05/image20.jpg"
 comments: true
 ---
 
 ### [UMLS](https://en.wikipedia.org/wiki/Unified_Medical_Language_System){:target="_blank"}
 The Unified Medical Language System (UMLS) is a compendium of many controlled vocabularies in the biomedical sciences (created 1986). It provides a mapping structure among these vocabularies and thus allows one to translate among the various terminology systems. It may also be viewed as a comprehensive thesaurus and ontology of biomedical concepts. UMLS further provides facilities for natural language processing. It is intended to be used mainly by developers of systems in medical informatics. 
 
-#### **UMLS consists of Knowledge Sources (databases) and a set of software tools.**
+> UMLS consists of Knowledge Sources (databases) and a set of software tools.
 
 ### UMLS Knowledge Sources
 
@@ -57,6 +59,5 @@ The setup procedure can be broken down into two steps mainly:
 
 ## REFERENCES:
 
-<small>[Unified Medical Language System](https://en.wikipedia.org/wiki/Unified_Medical_Language_System){:target="_blank"}</small>
-
+<small>[Unified Medical Language System](https://en.wikipedia.org/wiki/Unified_Medical_Language_System){:target="_blank"}</small><br>
 <small>[Unified Medical Language System - Knowledge Sources Downloads](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html){:target="_blank"}</small>

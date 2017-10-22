@@ -2,8 +2,10 @@
 layout: post
 title: Basics of Linguistics
 categories: []
-tags: [concept]
-description: 
+tags: [concept, references]
+description: The scientific study of language and its structure, including the study of grammar, syntax, and phonetics.
+cover: "/assets/images/language.jpg"
+cover_source: "https://www.vitalsmarts.com/crucialskills/files/2015/08/HelloLanguages_000045549754_1920x1080-1.jpg"
 comments: true
 ---
 
@@ -13,7 +15,7 @@ comments: true
 * **Joint Attention**: Human anguages can express shared goals. For example, conversation about voting for a leader.
 
 
-#### **Sign language is also a human language as it serves the same purposes as a spoken language.**
+> Sign language is also a human language as it serves the same purposes as a spoken language.
 
 ### [Aphasia](https://en.wikipedia.org/wiki/Aphasia){:target="_blank"}
 Aphasia is an inability to comprehend and formulate language because of damage to specific brain regions. This damage is typically caused by a cerebral vascular accident (stroke), or head trauma, however these are not the only possible causes. To be diagnosed with aphasia, a person's speech or language must be significantly impaired in one (or several) of the four communication modalities following acquired brain injury or have significant decline over a short time period (progressive aphasia). **The four communication modalities are auditory comprehension, verbal expression, reading and writing, and functional communication**.
@@ -57,18 +59,11 @@ Major Dimensions of the consonants are:
 
 ## REFERENCES:
 
-<small>[Miracles of Human Language](https://www.coursera.org/learn/human-language/lecture/MR57B/human-language-versus-other-languages){:target="_blank"}</small>
-
-<small>[Aphasia - Wikipedia](https://en.wikipedia.org/wiki/Aphasia){:target="_blank"}</small>
-
-<small>[Origin of Language](https://en.wikipedia.org/wiki/Origin_of_language){:target="_blank"}</small>
-
-<small>[Ethnologue](https://en.wikipedia.org/wiki/Ethnologue){:target="_blank"}</small>
-
-<small>[What's the difference between phonetics and phonology?](https://linguistics.stackexchange.com/questions/180/whats-the-difference-between-phonetics-and-phonology){:target="_blank"}</small>
-
-<small>[International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet){:target="_blank"}</small>
-
-<small>[The difference between consonants and vowels](https://www.spelfabet.com.au/2015/04/the-difference-between-consonants-and-vowels/){:target="_blank"}</small>
-
+<small>[Miracles of Human Language](https://www.coursera.org/learn/human-language/lecture/MR57B/human-language-versus-other-languages){:target="_blank"}</small><br>
+<small>[Aphasia - Wikipedia](https://en.wikipedia.org/wiki/Aphasia){:target="_blank"}</small><br>
+<small>[Origin of Language](https://en.wikipedia.org/wiki/Origin_of_language){:target="_blank"}</small><br>
+<small>[Ethnologue](https://en.wikipedia.org/wiki/Ethnologue){:target="_blank"}</small><br>
+<small>[What's the difference between phonetics and phonology?](https://linguistics.stackexchange.com/questions/180/whats-the-difference-between-phonetics-and-phonology){:target="_blank"}</small><br>
+<small>[International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet){:target="_blank"}</small><br>
+<small>[The difference between consonants and vowels](https://www.spelfabet.com.au/2015/04/the-difference-between-consonants-and-vowels/){:target="_blank"}</small><br>
 <small>[Consonants](https://en.wikipedia.org/wiki/Consonant){:target="_blank"}</small>

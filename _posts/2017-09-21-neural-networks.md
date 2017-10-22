@@ -2,8 +2,10 @@
 layout: post
 title: Neural Networks Theory
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: An Artificial Neural Network is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information
+cover: "/assets/images/neural-network.png"
+cover_source: "https://s3.amazonaws.com/f6s-public/media/480903.png"
 comments: true
 mathjax: true
 ---
@@ -20,7 +22,7 @@ Here, \\(x_0, \cdots, x_3\\) are the input units connected to the neuron and can
 
 $$h_\theta(x) = \frac {1} {1 + e^{-x}} \tag{1}$$
 
-**Parameters of the model, \\(\theta_0, \cdots, \theta_n\\) are also sometimes called weights of the model and represented by \\(w_1, \cdots, w_n\\).**
+> Parameters of the model, \\(\theta_0, \cdots, \theta_n\\) are also sometimes called weights of the model and represented by \\(w_1, \cdots, w_n\\).
 
 ### Neural Network
 **A group of these neuron units together forms a neural network**. Below is a representation of neural network, 
@@ -97,7 +99,7 @@ $$
 
 * Where \\(\Theta^{(j)}\\) is a matrix of dimensions \\((s_{j+1} * (s_j + 1)) \\)
 
-**Process of calculation of activations cascading across layers is called Forward Propagation.**
+> Process of calculation of activations cascading across layers is called Forward Propagation.
 
 ### Nueral Network and Logistic Regression
 
@@ -108,6 +110,5 @@ It is possible to have different kinds of architecture for the neural network. B
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Model Representation I](https://www.coursera.org/learn/machine-learning/lecture/ka3jK/model-representation-i){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Model Representation I](https://www.coursera.org/learn/machine-learning/lecture/ka3jK/model-representation-i){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - Model Representation II](https://www.coursera.org/learn/machine-learning/lecture/Hw3VK/model-representation-ii){:target="_blank"}</small>

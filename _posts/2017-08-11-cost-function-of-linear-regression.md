@@ -2,8 +2,10 @@
 layout: post
 title: Cost Function of Linear Regression
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Linear regression is a linear approach for modeling the relationship between a scalar dependent variable y and one or more explanatory variables (or independent variables) denoted X
+cover: "/assets/images/regression.jpeg"
+cover_source: "https://cdn-images-1.medium.com/max/1440/1*VoNxmH8kRLKlNI_uuEoBvw.jpeg"
 comments: true
 mathjax: true
 ---
@@ -99,8 +101,6 @@ The issue lies in the fact that we cannot always find the optimum global minima 
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Cost Function](https://www.coursera.org/learn/machine-learning/lecture/rkTp3/cost-function){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Cost Function Intuition I](https://www.coursera.org/learn/machine-learning/lecture/N09c6/cost-function-intuition-i){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Cost Function](https://www.coursera.org/learn/machine-learning/lecture/rkTp3/cost-function){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Cost Function Intuition I](https://www.coursera.org/learn/machine-learning/lecture/N09c6/cost-function-intuition-i){:target="_blank"}</small><br>
 <small>[Linear Regression: Wikipedia - Cost Function](https://en.wikipedia.org/wiki/Linear_regression){:target="_blank"}</small>

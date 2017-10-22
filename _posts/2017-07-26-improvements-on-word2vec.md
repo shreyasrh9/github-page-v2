@@ -2,11 +2,15 @@
 layout: post
 title: Improvements on Word2Vec
 categories: []
-tags: [NLP]
-description:
+tags: [NLP, machine learning, papers]
+description: Importance of optimization and its effect on training time for Word2Vec. Effective utilization of Hierarchical Softmax, Negative Sampling and Subsampling of frequent words.
+cover: "/assets/images/wordembedding.png"
+cover_source: "http://www.deep-solutions.net/blog/wordembeddings/wordembedding.png"
 comments: true
 mathjax: true
 ---
+
+{% include distributed-vector-representation.md %}
 
 ### Skip-Gram Model
 * Training objective of skip-gram model is to deduce word representations that help in predicting the surrounding words in a sentence or a document, i.e. give a sequence of training words \\(w_1, w_2, w_3, ... , w_T\\), the objective is to maximize the average log probability, 

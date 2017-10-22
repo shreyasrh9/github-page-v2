@@ -2,8 +2,10 @@
 layout: post
 title: The Normal Distribution
 categories: []
-tags: [probability]
-description:
+tags: [concept, mathematics, probability]
+description: The normal distribution, also known as the Gaussian or standard normal distribution, is the probability distribution that plots all of its values in a symmetrical fashion, and most of the results are situated around the probability's mean.
+cover: "/assets/images/normal-distribution.jpg"
+cover_source: "https://pbs.twimg.com/media/DBQttG0XYAAK8_M.jpg"
 comments: true
 mathjax: true
 ---
@@ -216,7 +218,6 @@ $$p(x) = {1 \over {\sigma \sqrt{2 \pi } } } e^{- {1 \over 2} \left( {x - \mu \ov
 
 ## REFERENCES:
 
-<small>[The Normal Distribution: A derivation from basic principles](http://courses.ncssm.edu/math/Talks/PDFS/normal.pdf){:target="_blank"}</small>
-
+<small>[The Normal Distribution: A derivation from basic principles](http://courses.ncssm.edu/math/Talks/PDFS/normal.pdf){:target="_blank"}</small><br>
 <small>[Derivation of univariate normal distribution](http://www.planetmathematics.com/DerNorm.pdf){:target="_blank"}</small>
 

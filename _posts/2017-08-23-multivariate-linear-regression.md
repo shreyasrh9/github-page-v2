@@ -2,8 +2,10 @@
 layout: post
 title: Multivariate Linear Regression
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: When linear regression is applied on a higher-dimensional dataset, a generalization of linear regression is obtained
+cover: "/assets/images/multi-dimensional.jpg"
+cover_source: "https://i.pinimg.com/originals/12/10/17/121017deafcab3026b8fba0a9bce9b68.jpg"
 comments: true
 mathjax: true
 ---
@@ -71,7 +73,7 @@ $$
   \tag{3}
 $$
 
-**Note: simultaneous update only**
+> Note: simultaneous update only
 
 Evaluating the partial derivative \\({\partial \over \partial \theta_j} J(\theta)\\) gives, 
 
@@ -89,7 +91,7 @@ The plot below shows the effect of feature scaling on the contour plot of the co
 
 As seen above, if the **contours are skewed** then learning steps would take longer to converge as the steps would be more prone to oscillatory behaviour as shown in the left plot. Whereas if the features are properly scaled, then the plot is evenly distributed and the steps of gradient descent have better profile of convergence.
 
-**Scaling of features between 0 and 1 is achieved by dividing the features by max. This helps in keeping all the features in appropriate ranges. The aim is to ideally keep the features around the range -1 to 1.**
+> Scaling of features between 0 and 1 is achieved by dividing the features by max. This helps in keeping all the features in appropriate ranges. The aim is to ideally keep the features around the range -1 to 1.
 
 Different ways of achieving feature scaling:
 
@@ -123,12 +125,12 @@ For example, **plot A** is a proper learning curve but if the plot shows that va
 
 Also, if the plot shows that the value is oscillating or fluctuating then the **learning rate needs to be reduced** as the steps are not small enough to proceed to the minima.
 
-**For sufficiently small \\(\alpha\\), gradient descent should decrease on every iteration.**
+> For sufficiently small \\(\alpha\\), gradient descent should decrease on every iteration.
 
 Very small learning rate is not advisable as the algorithm will be slow to converge as seen in **plot B**.
 
 
-**In order to choose optimum value of \\(\alpha\\) run the algorithm with different values like, 1, 0.3, 0.1, 0.03, 0.01 etc and plot the learning curve to understand whether the value should be increased or descreased.**
+> In order to choose optimum value of \\(\alpha\\) run the algorithm with different values like, 1, 0.3, 0.1, 0.03, 0.01 etc and plot the learning curve to understand whether the value should be increased or descreased.
 
 ### Feature Engineering
 
@@ -146,7 +148,7 @@ $$h_\theta(x) = \theta_0 + \theta_1\,x_1 + \theta_2\,x_2 + \cdots + \theta_n\,x_
 
 * Where \\(x_n = x^n\\)
 
-**Note: if using features like this then it is very important to apply feature scaling in order to avert issues related to feature range imbalance.**
+> Note: if using features like this then it is very important to apply feature scaling in order to avert issues related to feature range imbalance.
 
 This technique can be very powerful because one can fit all types of features using the substitution model. For example one can get a non-decreasing function as opposed to quadratic function which comes back down by using the following function
 
@@ -262,12 +264,8 @@ A rough implementation of the feature scaling used to get the plot above can be 
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Multivariate Linear Regression](https://www.coursera.org/learn/machine-learning/lecture/6Nj1q/multiple-features){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Gradient Descent for Multiple Variables](https://www.coursera.org/learn/machine-learning/lecture/Z9DKX/gradient-descent-for-multiple-variables){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Gradient Descent in Practice I - Feature Scaling](https://www.coursera.org/learn/machine-learning/lecture/xx3Da/gradient-descent-in-practice-i-feature-scaling){:target="_blank"}</small>
-
-<small>[Machine Learning: Coursera - Gradient Descent in Practice II - Learning Rate](https://www.coursera.org/learn/machine-learning/lecture/3iawu/gradient-descent-in-practice-ii-learning-rate){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Multivariate Linear Regression](https://www.coursera.org/learn/machine-learning/lecture/6Nj1q/multiple-features){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Gradient Descent for Multiple Variables](https://www.coursera.org/learn/machine-learning/lecture/Z9DKX/gradient-descent-for-multiple-variables){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Gradient Descent in Practice I - Feature Scaling](https://www.coursera.org/learn/machine-learning/lecture/xx3Da/gradient-descent-in-practice-i-feature-scaling){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Gradient Descent in Practice II - Learning Rate](https://www.coursera.org/learn/machine-learning/lecture/3iawu/gradient-descent-in-practice-ii-learning-rate){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - Feature and Polynomial Regerssion](https://www.coursera.org/learn/machine-learning/lecture/Rqgfz/features-and-polynomial-regression){:target="_blank"}</small>

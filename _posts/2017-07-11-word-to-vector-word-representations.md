@@ -2,11 +2,15 @@
 layout: post
 title: Word2Vec
 categories: []
-tags: [NLP]
-description:
+tags: [NLP, machine learning, papers]
+description: A language modeling or feature learning technique mapping words to vector representations.
+cover: "/assets/images/wordembedding.png"
+cover_source: "http://www.deep-solutions.net/blog/wordembeddings/wordembedding.png"
 comments: true
 mathjax: true
 ---
+
+{% include distributed-vector-representation.md %}
 
 ### Introduction
 * Computing the **continuous vector representations** of words from very large data sets.

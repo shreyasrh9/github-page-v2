@@ -2,8 +2,10 @@
 layout: post
 title: Algorithms and Data Structures
 categories: []
-tags: [CLRS]
-description:
+tags: [algorithms, DSA]
+description: Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language
+cover: "/assets/images/dsa.png"
+cover_source: "https://analyticsindiamag.com/wp-content/uploads/2017/01/algoritms.png"
 comments: true
 ---
 

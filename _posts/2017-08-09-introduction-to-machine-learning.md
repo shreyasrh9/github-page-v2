@@ -2,8 +2,10 @@
 layout: post
 title: Introduction to Machine Learning
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+cover: "/assets/images/machine-learning-book.jpg"
+cover_source: "https://develandoo.com/wp-content/uploads/2017/10/machine-learning.jpg"
+description: Machine learning is a field of computer science that gives computers the ability to learn without being explicitly programmed
 comments: true
 ---
 
@@ -24,11 +26,12 @@ Machine learning aims at developing new capabilities for computers wherein they 
 ### Definations
 * Field of study that gives the computers the ability to learn without being explicitly programmed.
 
-* **Well-Posed Learning Problem: A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.**
-  * Example: Playing chess
-    * E = the experience of playing many games of chess
-    * T = the task of playing chess
-    * P = the probability that the program will win the next game
+> Well-Posed Learning Problem: A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.
+
+* Example: Playing chess
+  * E = the experience of playing many games of chess
+  * T = the task of playing chess
+  * P = the probability that the program will win the next game
 
 ### Types of Machine Learning Algorithms
 * Supervised Learning
@@ -39,6 +42,5 @@ Machine learning aims at developing new capabilities for computers wherein they 
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Welcome](https://www.coursera.org/learn/machine-learning/lecture/RKFpn/welcome){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Welcome](https://www.coursera.org/learn/machine-learning/lecture/RKFpn/welcome){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - What is Machine Learning](https://www.coursera.org/learn/machine-learning/lecture/Ujm7v/what-is-machine-learning){:target="_blank"}</small>

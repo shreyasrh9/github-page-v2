@@ -2,8 +2,10 @@
 layout: post
 title: Blockchain
 categories: []
-tags: [concept]
-description:
+tags: [concept, references]
+description: A blockchain, originally termed as block chain, is a continuously growing distributed list of records, called blocks, that are linked using cryptographic security. 
+cover: "/assets/images/blockchain.png"
+cover_source: "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rtcKLbaBipwaan5v/blockchain-title-in-matrix-space_sk78fvxp__F0000.png"
 comments: true
 ---
 

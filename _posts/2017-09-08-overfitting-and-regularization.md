@@ -2,8 +2,10 @@
 layout: post
 title: Overfitting and Regularization
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description:  Overfitting occurs when a model is excessively complex, such as having too many parameters relative to the number of observations
+cover: "/assets/images/overfitting.png"
+cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfitting.svg/1200px-Overfitting.svg.png"
 comments: true
 mathjax: true
 ---
@@ -23,7 +25,7 @@ Opposite to this spectrum is the case of **underfitting**. For example there exi
 
 Both underfitting and overfitting are undesirable and should be avoided. 
 
-**While overfitting might seem to work well for the training data, it will fail to generalize to new examples.**
+> While overfitting might seem to work well for the training data, it will fail to generalize to new examples.
 
 Overfitting and underfitting are not limited to linear regression but also affect other machine learning techniques. Effect of underfitting and overfitting on logistic regression can be seen in the plots below.
 
@@ -57,6 +59,5 @@ $$J(\theta) = {1 \over 2m} \left[ \sum_{i=1}^m \left( h_\theta(x^{(i)}) - y^{(i)
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - The Problem of Overfitting](https://www.coursera.org/learn/machine-learning/lecture/ACpTQ/the-problem-of-overfitting){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - The Problem of Overfitting](https://www.coursera.org/learn/machine-learning/lecture/ACpTQ/the-problem-of-overfitting){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - Cost Function](https://www.coursera.org/learn/machine-learning/supplement/1tJlY/cost-function){:target="_blank"}</small>

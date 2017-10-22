@@ -2,8 +2,10 @@
 layout: post
 title: Insertion Sort
 categories: []
-tags: [CLRS]
-description:
+tags: [algorithms, DSA]
+description: The simplest sorting algorithm that works the way one would sort playing cards in hand.
+cover: "/assets/images/dsa.png"
+cover_source: "https://analyticsindiamag.com/wp-content/uploads/2017/01/algoritms.png"
 comments: true
 mathjax: true
 ---

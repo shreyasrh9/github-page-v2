@@ -1,13 +1,78 @@
-### shams-sam.github.io
+mediator
+========
 
+A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme
+[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](http://blog.base68.com).
 
+Screenshots
+--------
+![screenshot](/assets/images/screenshot1.jpg)
+![screenshot](/assets/images/screenshot2.jpg)
+![screenshot](/assets/images/screenshot3.jpg)
 
-Reference - [psteadman.github.io](https://github.com/psteadman/psteadman.github.io)
+Features
+-------
+* Fully Responsive layout
+* Use header images in articles, if you want to (add tag "image" and url to the image in the front matter section of a post)
+* Minimal design
+* Featured article support
+* FontAwesome implemented for easy use of icons fonts
+* Free & Open Source Font usage
 
-#### Change Log
-* [2017-06-19] [[Commit](https://github.com/shams-sam/shams-sam.github.io/commit/0b1dd563d1dc637500e3681b2c129f06aee53486)] Facebook Sidebar Icon: Addition of facebook icon in sidebar using [font-awesome](http://fontawesome.io/)
-* [2017-06-16] [[Commit](https://github.com/shams-sam/shams-sam.github.io/commit/ca2f7588d43ac47b5d7625d8a6f1b2340c0287c3)] [MathJax](http://docs.mathjax.org): Set `mathjax: true` in the post config to enable.
-* [2017-08-02] [[Commit](https://github.com/shams-sam/shams-sam.github.io/commit/3bc0157a10f99e47b5664a50133dd02c4a05fdc5)]  [Tipue Search](https://github.com/jekylltools/jekyll-tipue-search): Search bar functionality enabled.
-* [2017-08-04] [[Commit](https://github.com/shams-sam/shams-sam.github.io/commit/d2b1baedfd88ee49d67608510921ff4e831590d7)]  [Social Sharing](https://mycyberuniverse.com/web/social-media-share-bar-jekyll-blog-website.html): Social sharing buttons addition.
-* [2017-08-07] [[Commit](https://github.com/shams-sam/shams-sam.github.io/commit/4b7569d9e4e222826d99572f236d2f1b4a252a2f)]  [Typed.js](https://github.com/mattboldt/typed.js/): Integration of typed.js developed by [Matt Boldt](https://www.mattboldt.com).
-* [2017-08-07] [[Commit](https://github.com/shams-sam/shams-sam.github.io/commit/e84106ff3f2407a73eefe74cdd6aa8d3cd0b811a)]  [Travis CI Integration](https://docs.travis-ci.com/user/deployment/pages/): Integration of travis ci for build logs and deployment.
+Getting Started
+---
+- [Fork this repository](https://github.com/dirkfabisch/mediator)
+- Clone it: `git clone https://github.com/YOUR-USER/mediator`
+- Install the requried gems ([GitHub Pages](https://github.com/github/pages-gem), [Bourbon](https://github.com/thoughtbot/bourbon) and [Jekyll](https://github.com/jekyll/jekyll), [Jemoji](https://github.com/jekyll/jemoji)): `bundle install`
+- Run the jekyll server: `bundle exec jekyll serve`
+
+You should have a server up and running locally at <http://localhost:4000>.
+
+Configuration
+-----
+
+The main settings happen in side of the _config.yml file:
+
+### Site
+
+Main settings for the site
+
+* **title**: name of your site
+* **description**: description of your site
+* **logo**: small logo for the site (300x * 300x)
+* **cover**: large background image on the index page
+
+* **name**: name site owner
+* **email**: mail address of the site owner
+* **author**: author name
+* **author_image**: small image of author (300x * 300px)
+* **disqus**: add a disqus forum for your post
+
+### Social
+
+The template allows to add all major social platforms to your site.
+Fill the the form for each platform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  If you leave the **url** and **desc** empty the icons are not shown on the index page, but the share icons on the article pages remains untouched (Thanks to [Phil](https://github.com/philsturgeon))
+
+* **icon**:	name of social platform (must match a name of [font-awsome](http://fortawesome.github.io/Font-Awesome/) icon set )
+* **url**:	url of your account
+* **desc**: slogan of the platform
+* **share_url**: share url
+* **share_title**: first part of url for the title
+* **share_link**: second part of the share url for the link to the post
+
+The Liquid template engine will magical combine the different parts to a share url.
+
+```
+http://twitter.com/share?text=post_title&amp;url=post_url
+````
+
+See [_config.yml](https://github.com/dirkfabisch/mediator/blob/master/_config.yml) for more examples.
+
+Licensing
+---------
+
+[MIT](https://github.com/dirkfabisch/mediator/blob/master/LICENCE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
+
+Contact
+-------
+I'd love to hear from you at [@dirkfabisch](https://twitter.com/dirkfabisch). Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.

@@ -2,8 +2,10 @@
 layout: post
 title: Basics of Language Model
 categories: []
-tags: [NLP]
-description:
+tags: [NLP, machine learning]
+description: Language modeling is used in speech recognition, machine translation, part-of-speech tagging, parsing, handwriting recognition, information retrieval and other applications.
+cover: "/assets/images/language-model.jpg"
+cover_source: "https://i.pinimg.com/originals/54/1f/45/541f45629bb88e0c905ed6d3e4eac121.jpg"
 comments: true
 mathjax: true
 ---
@@ -18,7 +20,7 @@ $$x_1\,x_2\,\cdots\,x_n$$
   * \\(x_1 \cdots x_{n-1} \in \nu\\)
   * \\(x_n\\) is a special symbol STOP \\(\require{cancel}\cancel{\in} \nu \\) 
 
-**Set of all the words in a language are assumed to be finite.**
+> Set of all the words in a language are assumed to be finite.
 
 Let \\(\nu^{\dagger}\\) be the **infinite set of all sentences** with the vocabulary \\(\nu\\).
 
@@ -73,7 +75,7 @@ $$
   \end{align}
 $$
 
-**It is assumed that \\(x_0,\, x_{-1} = *\\), where  * is the special start symbol.**
+> It is assumed that \\(x_0,\, x_{-1} = *\\), where  * is the special start symbol.
 
 ### Markov Sequences for Variable-length Sentences
 The value n, assumed to be fixed number in previous section, is considered to be a random variable itself and the nth word is always equal to the special symbol STOP.
@@ -260,7 +262,7 @@ For any context \\(v\\), there is a **missing mass**, defined as,
 
 $$\alpha(v) = 1 - \sum_w {c^*(v, w) \over c(v)}$$
 
-**The intuition behind discounted methods is to divide the missing mass among words \\(w\\), such that \\(c(v,w) = 0\\).**
+> The intuition behind discounted methods is to divide the missing mass among words \\(w\\), such that \\(c(v,w) = 0\\).
 
 Formally, for any \\(v\\), there exist sets
 

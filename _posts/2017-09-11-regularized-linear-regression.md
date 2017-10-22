@@ -2,8 +2,10 @@
 layout: post
 title: Regularized Linear Regression
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Regularization is a process of introducing additional information in order to solve an ill-posed problem or to prevent overfitting
+cover: "/assets/images/overfitting.png"
+cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfitting.svg/1200px-Overfitting.svg.png"
 comments: true
 mathjax: true
 ---
@@ -150,7 +152,7 @@ The effect of regularization on regression using normal equation can be seen in 
 
 ![Regularizated Linear Regression](/assets/2017-09-11-regularized-linear-regression/fig-2-regularization-for-normal-equation.png?raw=true)
 
-**No implementation of regularized normal equation presented as it is very straight forward.** 
+> No implementation of regularized normal equation presented as it is very straight forward.
 
 ## REFERENCES:
 

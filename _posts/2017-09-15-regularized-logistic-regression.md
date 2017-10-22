@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Regularized Logistic Regression
-categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Regularization is a process of introducing additional information in order to solve an ill-posed problem or to prevent overfitting
+cover: "/assets/images/overfitting.png"
+cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfitting.svg/1200px-Overfitting.svg.png"
 comments: true
 mathjax: true
 ---
@@ -121,11 +122,11 @@ def update_theta(theta, X, y, lamda=None):
 
 Link to [Rough Working Code](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/LogisticRegressionHigherOrder.ipynb){:target="_blank"}. Change the value of lamda in the code to get different decision boundaries for the [data](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/logistic_regression_data_2.csv){:target="_blank"} as shown below.
 
-![Regularization](\assets\2017-09-15-regularized-logistic-regression\fig-1-regularization.png?raw=true)
-![Regularization](\assets\2017-09-15-regularized-logistic-regression\fig-2-regularization.png?raw=true)
-![Regularization](\assets\2017-09-15-regularized-logistic-regression\fig-3-regularization.png?raw=true)
-![Regularization](\assets\2017-09-15-regularized-logistic-regression\fig-4-regularization.png?raw=true)
-![Regularization](\assets\2017-09-15-regularized-logistic-regression\fig-5-regularization.png?raw=true)
+![Regularization with \\(\lambda = 0.01\\)](\assets\2017-09-15-regularized-logistic-regression\fig-1-regularization.png?raw=true)
+![Regularization with \\(\lambda = 0.1\\)](\assets\2017-09-15-regularized-logistic-regression\fig-2-regularization.png?raw=true)
+![Regularization with \\(\lambda = 1\\)](\assets\2017-09-15-regularized-logistic-regression\fig-3-regularization.png?raw=true)
+![Regularization with \\(\lambda = 10\\)](\assets\2017-09-15-regularized-logistic-regression\fig-4-regularization.png?raw=true)
+![Regularization with \\(\lambda = 100\\)](\assets\2017-09-15-regularized-logistic-regression\fig-5-regularization.png?raw=true)
 
 ## REFERENCES:
 

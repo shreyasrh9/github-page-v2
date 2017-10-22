@@ -2,8 +2,10 @@
 layout: post
 title: Multiclass Logistic Regression
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Application of logistic regression to multi-dimensional datasets. It is a generalization of the binary logistic regression.
+cover: "/assets/images/logistic-regression.png"
+cover_source: "http://www.onthelambda.com/wp-content/uploads/2014/07/quadratic.png"
 comments: true
 mathjax: true
 ---

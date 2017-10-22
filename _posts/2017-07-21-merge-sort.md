@@ -2,8 +2,10 @@
 layout: post
 title: Merge Sort
 categories: []
-tags: [CLRS]
-description:
+tags: [algorithms, DSA]
+description: Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves.
+cover: "/assets/images/dsa.png"
+cover_source: "https://analyticsindiamag.com/wp-content/uploads/2017/01/algoritms.png"
 comments: true
 mathjax: true
 ---
@@ -195,6 +197,5 @@ public class MergeSortInplace {
 
 ## REFERENCES:
 
-<small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small>
-
+<small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small><br>
 <small>[Merge Sort - Wikipedia](https://en.wikipedia.org/wiki/Merge_sort){:target="_blank"}</small>

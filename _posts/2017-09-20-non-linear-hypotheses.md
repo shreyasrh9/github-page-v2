@@ -2,8 +2,10 @@
 layout: post
 title: Non-linear Hypotheses
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: Advantages of neural networks over logistic regession and the relationship between the two. Neural network is essentially the successor of logistic regression.
+cover: "/assets/images/abstract.png"
+cover_source: "https://maxoffsky.com/word/wp-content/uploads/2014/04/Screen-Shot-2014-04-28-at-10.32.16-AM.png"
 comments: true
 mathjax: true
 ---
@@ -31,6 +33,5 @@ This hypothesis puts light on the fact that even though human brain learns a var
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Non-Linear Hypotheses](https://www.coursera.org/learn/machine-learning/lecture/OAOhO/non-linear-hypotheses){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Non-Linear Hypotheses](https://www.coursera.org/learn/machine-learning/lecture/OAOhO/non-linear-hypotheses){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - Neurons and the Brain](https://www.coursera.org/learn/machine-learning/lecture/IPmzw/neurons-and-the-brain){:target="_blank"}</small>

@@ -2,8 +2,10 @@
 layout: post
 title: Building Stopword List for Information Retrieval System
 categories: []
-tags: [NLP]
-description:
+tags: [NLP, machine learning, papers]
+description: In computing, stop words are words which are filtered out before or after processing of natural language data (text).
+cover: "/assets/images/word-cloud.jpg"
+cover_source: "https://orig00.deviantart.net/f759/f/2012/244/b/9/asoiaf_word_cloud___jon_snow_by_galanix-d5d83v0.jpg"
 comments: true
 mathjax: true
 ---
@@ -195,8 +197,6 @@ def get_word_kl_metric(word):
 
 ## REFERENCES:
 
-<small>[Automatically Building a Stopword List for a nInformation Retrieval System](http://terrierteam.dcs.gla.ac.uk/publications/rtlo_DIRpaper.pdf){:target="_blank"}</small>
-
-<small>[Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law){:target="_blank"}</small>
-
+<small>[Automatically Building a Stopword List for an Information Retrieval System](http://terrierteam.dcs.gla.ac.uk/publications/rtlo_DIRpaper.pdf){:target="_blank"}</small><br>
+<small>[Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law){:target="_blank"}</small><br>
 <small>[Kullback–Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence){:target="_blank"}</small>

@@ -2,8 +2,10 @@
 layout: post
 title: Sort Binary Array
 categories: []
-tags: [array algorithm]
-description:
+tags: [array algorithms, references, algorithms]
+cover: "/assets/images/algorithm.png"
+cover_source: "https://www.pixelstalk.net/mathematics-hd-desktop-wallpapers/"
+description: To sort a binary array using Quicksort logic.
 comments: true
 ---
 
@@ -69,5 +71,4 @@ while start < end:
 ## REFERENCES:
 
 <small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small>
-
 <small>[Sort binary array in linear time](http://www.techiedelight.com/sort-binary-array-linear-time/){:target="_blank"}</small>

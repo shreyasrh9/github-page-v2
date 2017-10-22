@@ -2,11 +2,16 @@
 layout: post
 title: Continuous Random Variables
 categories: []
-tags: [probability]
-description:
+tags: [mathematics, probability]
+description: A continuous random variable is a random variable where the data can take infinitely many values.
+cover: "/assets/images/distributions.jpg"
+cover_source: "http://page.mi.fu-berlin.de/werner99/bilder/normalvert3.jpg"
 comments: true
 mathjax: true
 ---
+
+
+{% include probability.md %}
 
 ### Continuous Random Variables
 A continuous random variable is a function that maps the sample space of a random experiment to an interval in real value space. A random variable is called continuous if there is an underlying function f(x) such that 
@@ -33,12 +38,12 @@ $$cdf(X \leq c) = \int_{-\infty}^c f(x) dx$$
 * **Properties of cdf:**
   * Unlike f(x), cdf(x) is probability and follows the laws and hence,
 
-  $$0 \leq cdf(x) \leq 1$$
+$$0 \leq cdf(x) \leq 1$$
   
   * As probability is **non-negative**, cdf is a **non-decreasing** function.
   * Differential of cdf is given by 
 
-  $$cdf'(x) = f(x)$$
+$$cdf'(x) = f(x)$$
 
   * Limits of cdf are given by
 
@@ -58,7 +63,7 @@ $$ Uniform([c, d]) = {1 \over (d-c)}$$
 
   * Defined using a parameter \\(\lambda\\) and has the pdf given by
 
-    $$ f(x) = \lambda e^{- \lambda x}, \, x \geq 0 $$
+$$ f(x) = \lambda e^{- \lambda x}, \, x \geq 0 $$
 
   * It is used to model the waiting time for an event to occur eg. waiting time for nuclear decay of radioactive isotope distributed exponentially and \\(\lambda\\) is known as the half life of the isotope.
 
@@ -82,7 +87,7 @@ $$ \frac {P(X \gt n+w)} {P(X \gt w)} = \frac {e^{- \lambda (n+w)}} {e^{- \lambda
 
 ### Summary of Distributions
 
-| Distribution | \\(pdf(x)\\)| \\(cdf(x)\\) |
+| Distribution | pdf(x)| cdf(x) |
 |:-:|:-:|:-:|
 | \\(Uni(c, d)\\) | \\({1 \over d-c}\\)  | \\({x-c \over d-c}\\) |
 | \\(Exp( \lambda ), \, x \geq 0 \\) | \\( \lambda e^{- \lambda x} \\) | \\(1 - e^{- \lambda x}\\) |
@@ -104,20 +109,22 @@ $$E(X) = \int_c^d x\, f(x) dx \tag{2}$$
 * \\(f(x)dx\\) denotes the probability value with which X can take the infinitesimal range dx.
 
 * Some other properties of expected value of a random variable:
-    \\[E(X+Y) = E(X) + E(Y) \tag{3}\\]
-    \\[E(cX + d) = c * E(X) + d \tag{4}\\]
+
+\\[E(X+Y) = E(X) + E(Y) \tag{3}\\]
+\\[E(cX + d) = c * E(X) + d \tag{4}\\]
 
 ### Variance and Standard Deviation
 
 * For a continuous random variable X, with Expected value \\(\mu\\), variance is given by,
 
 \\[Var(X) = E((X-\mu)^2) \tag{5}\\]
-    \\[\sigma = \sqrt (Var(X)) \tag{6}\\]
+\\[\sigma = \sqrt (Var(X)) \tag{6}\\]
 
 * Some other properties of variance of a random variable:
-    \\[Var(X) = E(X^2) - (E(X))^2 \tag{7}\\]
-    \\[Var(aX + b) = a^2 Var(X) \tag{8}\\]
-    \\[Var(X+Y) = Var(X) + Var(Y) \tag{9}\\] iff X and Y are independent
+
+\\[Var(X) = E(X^2) - (E(X))^2 \tag{7}\\]
+\\[Var(aX + b) = a^2 Var(X) \tag{8}\\]
+\\[Var(X+Y) = Var(X) + Var(Y) \text { iff X and Y are independent } \tag{9}\\]
 
 ### Quartiles
 
@@ -126,4 +133,4 @@ The value of \\(x\\) for which \\(cdf(x) = p\\) is called \\(p^{th}\\) quartile 
 
 ## REFERENCES:
 
-<small>[Continuous Random Variables](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/continuous-random-variables/tutorial/){:target="_blank"}</small>
+1. [Continuous Random Variables](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/continuous-random-variables/tutorial/){:target="_blank"}

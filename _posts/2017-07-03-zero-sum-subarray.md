@@ -2,8 +2,10 @@
 layout: post
 title: Zero Sum Subarrays
 categories: []
-tags: [array algorithm]
-description:
+tags: [array algorithms, references, algorithms]
+cover: "/assets/images/algorithm.png"
+cover_source: "https://www.pixelstalk.net/mathematics-hd-desktop-wallpapers/"
+description: To find continous sub-arrays that have sum zero.
 comments: true
 ---
 
@@ -53,5 +55,4 @@ for i in range(len(a)):
 ## REFERENCES:
 
 <small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small>
-
 <small>[Find sub-array with 0 sum](http://www.techiedelight.com/find-sub-array-with-0-sum/){:target="_blank"}</small>

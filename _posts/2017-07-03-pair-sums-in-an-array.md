@@ -2,8 +2,10 @@
 layout: post
 title: Pair Sums In An Array
 categories: []
-tags: [array algorithm]
-description:
+tags: [array algorithms, references, algorithms]
+cover: "/assets/images/algorithm.png"
+cover_source: "https://www.pixelstalk.net/mathematics-hd-desktop-wallpapers/"
+description: To find a pair in an array that add up to a given number.
 comments: true
 ---
 
@@ -70,5 +72,4 @@ while (l<h):
 ## REFERENCES:
 
 <small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small>
-
 <small>[Find pair with given sum in the array](http://www.techiedelight.com/find-pair-with-given-sum-array/){:target="_blank"}</small>

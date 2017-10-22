@@ -2,8 +2,10 @@
 layout: post
 title: Divide and Conquer
 categories: []
-tags: [CLRS]
-description:
+tags: [algorithms, DSA]
+description: Divide and conquer is an algorithm design paradigm based on multi-branched recursion
+cover: "/assets/images/dsa.png"
+cover_source: "https://analyticsindiamag.com/wp-content/uploads/2017/01/algoritms.png"
 comments: true
 ---
 
@@ -39,6 +41,5 @@ Merge procedure assumes that the sequence A[p .. q] and A[q+1 .. r] are in sorte
 
 ## REFERENCES:
 
-<small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small>
-
+<small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small><br>
 <small>[Recursion - GeeksforGeeks](http://www.geeksforgeeks.org/recursion/){:target="_blank"}</small>

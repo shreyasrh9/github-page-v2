@@ -2,8 +2,10 @@
 layout: post
 title: Duplicate In Limited Range Array (XOR)
 categories: []
-tags: [array algorithm]
-description:
+tags: [array algorithms, references, algorithms]
+cover: "/assets/images/algorithm.png"
+cover_source: "https://www.pixelstalk.net/mathematics-hd-desktop-wallpapers/"
+description: One way to find the duplicate in a limited range array using XOR operation.
 comments: true
 ---
 
@@ -48,5 +50,4 @@ print(xor)
 ## REFERENCES:
 
 <small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small>
-
 <small>[Find a duplicate element in a limited range array](http://www.techiedelight.com/find-duplicate-element-limited-range-array/){:target="_blank"}</small>

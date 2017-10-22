@@ -2,8 +2,10 @@
 layout: post
 title: Pseudocode
 categories: []
-tags: [CLRS]
-description: 
+tags: [algorithms, DSA]
+description: A notation resembling a simplified programming language, used in program design
+cover: "/assets/images/dsa.png"
+cover_source: "https://analyticsindiamag.com/wp-content/uploads/2017/01/algoritms.png"
 comments: true
 ---
 
@@ -51,6 +53,5 @@ Loop invariant works in a way similar to **mathematical induction**. So to prove
 
 ## REFERENCES:
 
-<small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small>
-
+<small>[Introduction to Algorithms 3rd Edition - Chapter 2](https://web.njit.edu/~wl256/download/cs610/Introduction-to-algorithm-3rdEdition.pdf){:target="_blank"}</small><br>
 <small>[Algorithm - What is loop invariant?](https://stackoverflow.com/questions/3221577/what-is-a-loop-invariant){:target="_blank"}</small>

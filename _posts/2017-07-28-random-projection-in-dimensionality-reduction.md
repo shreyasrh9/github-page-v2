@@ -2,8 +2,10 @@
 layout: post
 title: Random Projection in Dimensionality Reduction
 categories: []
-tags: [concept]
-description:
+tags: [concept, machine learning, mathematics]
+description: The dimensions and distribution of random projections matrices are controlled so as to preserve the pairwise distances between any two samples of the dataset.
+cover: "/assets/images/projection.jpg"
+cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Staircase_perspective.jpg/1200px-Staircase_perspective.jpg"
 comments: true
 mathjax: true
 ---
@@ -167,6 +169,5 @@ $$X_{d*N}^{new} = R_{d*k}^T X_{k*N}^{RP}$$
 
 ## REFERENCES
 
-<small>[Random projection in dimensionality reduction: Applications to image and text data](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.5135&rep=rep1&type=pdf){:target="_blank"}</small>
-
+<small>[Random projection in dimensionality reduction: Applications to image and text data](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.5135&rep=rep1&type=pdf){:target="_blank"}</small><br>
 <small>[Various Embeddings on Digits Data - Python Sklearn](http://scikit-learn.org/stable/auto_examples/manifold/plot_lle_digits.html#sphx-glr-auto-examples-manifold-plot-lle-digits-py){:target="_blank"}</small>

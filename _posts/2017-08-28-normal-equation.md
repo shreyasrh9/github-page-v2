@@ -2,8 +2,10 @@
 layout: post
 title: Normal Equation
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, mathematics, andrew ng]
+description: Given a matrix equation, the normal equation is one which minimizes the sum of the square differences between the left and right sides
+cover: "/assets/images/regression.jpeg"
+cover_source: "https://cdn-images-1.medium.com/max/1440/1*VoNxmH8kRLKlNI_uuEoBvw.jpeg"
 comments: true
 mathjax: true
 ---
@@ -64,7 +66,7 @@ Matrices that do not have an inverse are called **singular or degenerate**.
 * **Linearly dependent** features i.e. redundant features.
 * Too many features i.e. \\(m \leq n\\), then reduce the number of features or use regularization.
 
-**Calculating psuedo-inverse instead of inverse can also solve the issue of non-invertibility.**
+> Calculating psuedo-inverse instead of inverse can also solve the issue of non-invertibility.
 
 
 ### Implementation 
@@ -293,8 +295,6 @@ which is same as (5)
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Normal Equation](https://www.coursera.org/learn/machine-learning/lecture/2DKxQ/normal-equation){:target="_blank"}</small>
-
-<small>[Derivation of the Normal Equation for linear regression](http://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Normal Equation](https://www.coursera.org/learn/machine-learning/lecture/2DKxQ/normal-equation){:target="_blank"}</small><br>
+<small>[Derivation of the Normal Equation for linear regression](http://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression){:target="_blank"}</small><br>
 <small>[Normal Equation and Matrix Calculus](http://eli.thegreenplace.net/2015/the-normal-equation-and-matrix-calculus/){:target="_blank"}</small>

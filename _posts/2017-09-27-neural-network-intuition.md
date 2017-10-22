@@ -2,8 +2,10 @@
 layout: post
 title: Neural Networks Intuition
 categories: []
-tags: [machine learning andrew ng]
-description:
+tags: [machine learning, andrew ng]
+description: The relationship between logistic regression and neural networks. Explaination about how neural network is the logical successor of logistic regression
+cover: "/assets/images/abstract.png"
+cover_source: "https://maxoffsky.com/word/wp-content/uploads/2014/04/Screen-Shot-2014-04-28-at-10.32.16-AM.png"
 comments: true
 mathjax: true
 ---
@@ -160,10 +162,9 @@ Here if weights are seen carefully, \\(a_1^{(2)}\\) is nothing but the AND gate 
 
 The values of \\(h_\theta(x)\\) is nothing but the expected value of the XNOR operation.
 
-**This gives the intuition that the hidden layers are calculating a more complex input which inturn helps to turn the problem into a linearly seperable one using the transformations. This is the main reason the neural networks are fairly powerful classifiers because as the depth (or number of hidden layers) of the neural network increases it can derive more and more complex features for the final layer.**
+> This gives the intuition that the hidden layers are calculating a more complex input which inturn helps to turn the problem into a linearly seperable one using the transformations. This is the main reason the neural networks are fairly powerful classifiers because as the depth (or number of hidden layers) of the neural network increases it can derive more and more complex features for the final layer.
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Examples and Intutions I](https://www.coursera.org/learn/machine-learning/lecture/rBZmG/examples-and-intuitions-i){:target="_blank"}</small>
-
+<small>[Machine Learning: Coursera - Examples and Intutions I](https://www.coursera.org/learn/machine-learning/lecture/rBZmG/examples-and-intuitions-i){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - Examples and Intutions II](https://www.coursera.org/learn/machine-learning/lecture/solUx/examples-and-intuitions-ii){:target="_blank"}</small>
