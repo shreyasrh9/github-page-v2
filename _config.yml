@@ -21,7 +21,8 @@ title: "Machine Learning Medium"
 description: Mathematics, Machine Learning, Natural Language Processing Etc.
 cover: "/assets/images/cover.jpeg"
 footer: "/assets/images/footer.jpg"
-url: "http://machinelearningmedium.com"
+url: "https://machinelearningmedium.com"
+facebook_page: "https://www.facebook.com/machinelearningmedium/"
 baseurl: ""
 google_analytics: UA-108148924-1
 
@@ -70,6 +71,7 @@ author:
   description: 'Data Scientist @ Practo'
   image: "/assets/images/author.jpg"
   twitter_handle: '@sshamssam'
+  twitter_url: 'https://twitter.com/sshamssam'
   disqus: shams-sam
 
 # Social icons and sharing options
@@ -81,19 +83,19 @@ social:
     share_title:
     share_link:
 
-  # - icon: facebook
-  #   url:  https://facebook.com/shams-sam
-  #   desc: Facebook
-  #   share_url: https://www.facebook.com/sharer.php
-  #   share_title: ?t=
-  #   share_link: "&amp;u="
+  - icon: facebook
+    url:  https://facebook.com/shams-sam
+    desc: Facebook
+    share_url: https://www.facebook.com/sharer.php
+    share_title: ?t=
+    share_link: "&amp;u="
 
-  # - icon:	twitter
-  #   url:	https://twitter.com/sshamssam
-  #   desc: Twitter
-  #   share_url: http://twitter.com/share
-  #   share_title: ?text=
-  #   share_link: "&amp;url="
+  - icon:	twitter
+    url:	https://twitter.com/sshamssam
+    desc: Twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
 
   - icon: linkedin
     url:  https://linkedin.com/in/shams-sheikh-20328154
@@ -102,9 +104,9 @@ social:
     share_title:
     share_link:
 
-  # - icon: envelope
-  #   url: "mailto:shams.sam@live.com"
-  #   desc: E-mail
-  #   share_url:
-  #   share_title:
-  #   share_link:
+  - icon: envelope
+    url: "mailto:shams.sam@live.com"
+    desc: E-mail
+    share_url:
+    share_title:
+    share_link:
