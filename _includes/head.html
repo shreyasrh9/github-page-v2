@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -17,17 +17,17 @@
     <meta name="twitter:site" content="{{ site.author.twitter_handle }}" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:image" content="{{ site.author.image | prepend: site.baseurl | prepend: site.url }}" />
-    {% if page.excerpt %}
-    <meta name="twitter:description"  content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}" />
+    {% if page.description %}
+    <meta name="twitter:description"  content="{{ page.description }}" />
     {% elsif site.description %}
-    <meta name="twitter:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
     {% endif %}
   {% endif %}
   
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-  {% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}" />
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
   {% elsif site.description %}
   <meta property="og:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
   {% endif %}
@@ -46,13 +46,8 @@
   <link rel="stylesheet" type="text/css" href="{{ "/css/custom.css"  | prepend: site.baseurl  }}" />
   <link rel="stylesheet" type="text/css" href="{{ "/public/css/share_bar.css"  | prepend: site.baseurl  }}" />
   <link rel="stylesheet" type="text/css" href="{{ "/public/css/syntax.css"  | prepend: site.baseurl  }}" />
-
-
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"> -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600|Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
-  
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/fav.ico?v1">
 
 
