@@ -2,7 +2,7 @@
 layout: post
 title: "Neural Networks: Cost Function and Backpropagation"
 categories: []
-tags: [machine learning, andrew ng, featured]
+tags: [machine learning, andrew ng]
 description: Intuition behind the idea of backpropagation and its extension to calculate cost function
 cover: "/assets/images/neural-network.png"
 cover_source: "https://s3.amazonaws.com/f6s-public/media/480903.png"
