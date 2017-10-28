@@ -10,6 +10,8 @@ comments: true
 mathjax: true
 ---
 
+{% include what-is-mathematics.md %}
+
 ### The Natural Numbers
 
 The natural numbers were created by the human mind out of the necessity to count the objects around us. Most basics of mathematics are associated with association of numbers with tangible objects. But advanced mathematics is built on top of the **abstract concept of number system**.
@@ -108,4 +110,4 @@ Below is the **table for addition** followed by **table for multiplication** in 
 
 ## REFERENCES:
 
-<small>What is Mathematics? Second Edition - Chapter I: Natural Numbers </small>
+<small>[What is Mathematics? Second Edition - Chapter I: Natural Numbers](https://drive.google.com/open?id=0BxedRvE84NXkSy1sdzJKNDlHZGM){:target="_blank"}</small>
