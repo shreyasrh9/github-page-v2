@@ -9,7 +9,7 @@
       <div class="author-strip-inner">
         <div class="author-image" style="background-image: url({{ site.author.image | prepend: site.baseurl }})">Blog Logo</div>
         <div class="author-detail">
-          <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author.name }}</h4>
+          <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{site.baseurl}}/about/" style="color: #000000; text-decoration: none;">{{ site.author.name }}</a></h4>
           <h5 class="author-name"> {{site.author.description}} </h5>
           <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d" }}</time>
           <span class="middot">&#183;</span>
@@ -34,7 +34,7 @@
         <div class="noarticleimage">
           <div class="post-meta">
             <h1 class="post-title">{{ page.title }}</h1>
-            <h2 class="post-description">{{ page.description }}</h1>
+            <h2 class="post-description">{{ page.description }}</h2>
           </div>
         </div>
         <div class="horizontal-divider">&#183; &#183; &#183;</div>

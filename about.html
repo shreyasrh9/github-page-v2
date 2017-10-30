@@ -1,0 +1,53 @@
+---
+title: About Me
+permalink: /about/
+cover: "/assets/images/about-me.jpg"
+cover_source: "http://www.newbeeman.net/wp-content/uploads/2016/03/About-me.jpg"
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body itemscope itemtype="http://schema.org/Article">
+    {% include header.html %}
+    <div class="author-strip">
+      <div class="author-strip-inner">
+        <div class="author-image" style="background-image: url({{ site.author.image | prepend: site.baseurl }})">Blog Logo</div>
+        <div class="author-detail">
+          <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author.name }}</h4>
+          <h5 class="author-name"> {{site.author.description}} </h5>
+          <time>B.Tech, Electrical Engineering</time>
+          <span class="middot">&#183;</span>
+          <div class="post-reading"> NITK Surathkal, India
+          </div>
+          <div class="about-me-social" style="font-size: 10px">
+        {% for social in site.social %}
+          {% if social.url %}
+              <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %} target="_blank" style="text-decoration: none; color: rgba(0, 0, 0, 0.54);">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-{{ social.icon }} fa-stack-1x"></i>
+                </span>
+              </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="horizontal-divider">&#183; &#183; &#183;</div>
+    <main class="content post-content" role="main">
+        <h2 class="post-description" style="font-size: 17px; font-weight: 200;">I am Shams, a Data Scientist interested in Machine Learning and Advanced Mathematics.</h2>
+        <h2 class="post-description" style="font-size: 17px; font-weight: 200;">At <a href="https://www.practo.com" target="_blank" style="color: blue; font-weight: 600; text-decoration: none;">Practo</a>, I work on <strong>NLP</strong> and <strong>Computer Vision</strong> problems to build intelligent healthcare systems driven by machine learning models. I have built systems from ground up for retrieving clinical concepts from free text leveraging NLP techniques and allocating appropriate <a href="https://en.wikipedia.org/wiki/ICD-10" target="_blank" style="color: blue; font-weight: 600; text-decoration: none;">ICD-10</a> code using Dense-LSTM Hybrid DNNs.</h2>
+        <h2 class="post-description" style="font-size: 17px; font-weight: 200; text-decoration: none ">Before that, I was a part of Practo Search, working on <strong>ranking algorithms</strong> and internationalization of search across various countries by building the backend using technologies like elasticsearch, lucene. I also worked on Practo Discovery to build <strong>nginx level URL discovery and redirection</strong> service.</h2>
+        <h2 class="post-description" style="font-size: 17px; font-weight: 200; text-decoration:none; ">I am an alumni from <a href="http://nitk.ac.in/" style="color: blue; font-weight: 600; text-decoration:  none">NITK Surathkal, India</a>.</h2>
+        <h2 class="post-description" style="font-size: 17px; font-weight: 200; text-decoration: none ">Also a active participant in <a href="https://www.kaggle.com/shamssam/competitions" style="color: blue; font-weight: 600; text-decoration: none;">Kaggle</a> Competitions and find it a very good learning medium. This <a href="https://machinelearningmedium.com" style="color: blue; font-weight: 600; text-decoration: none;">website</a> is built and maintained by me personally. It helps me to learn new stuff by writing and explaining things. Any improvements or suggestions are welcome.</h2>
+        <h2 class="post-description" style="font-size: 17px; font-weight: 200; text-decoration: none ">I am a fitness freak, a motorcycle enthusiast, who loves to go on long rides. Insane about basketball and active follower of NBA.</h2>
+        <section class="post-content">
+          <a name="topofpage"></a>
+       </section>
+    </main>
+    <div class="horizontal-divider">&#183; &#183; &#183;</div>
+    {% include footer.html %}
+    {% include javascripts.html %}
+</body>
+</html>
