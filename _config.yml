@@ -8,6 +8,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - assets/images_original
+  - init_server.sh
 
 # Dependencies
 markdown:         kramdown
