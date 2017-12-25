@@ -52,11 +52,15 @@ The payee can still however not check for double-spending.
 
 Traditional solution of this involves introducing a trusted central authority, or mint, that checks every transaction for double-spending. In such a system, after every transaction the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. This still does not solve the basic problem of dependency on company running the mint, which is basically serving the same purpose as that of a bank in the current system.
 
+![Flow of Transactions](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-1-transaction.png)
+
 The only way to confirm the absence of a transaction is to have a copy of all the transactions. To accomplish this in a decentralized system, the transactions must be publically announced and there is a need for a system for participants to agree on a single history of the order in which they were received. So, at the time of the transaction, the payee needs a proof that the majority of the nodes agreed it was the first received one.
 
 ### Timestamp Server
 
 A timestamp server basically takes a hash of a block of items to be timestamped and widely publishes it, where the timestamp proves that the data must have existed at the time, in order to get the hash.
+
+![Timestamp Server](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-2-blockchain.png)
 
 > Each timestamp includes previous timestamp in its hash, forming a chain (blockchain), with each timestamp reinforcing the ones before it.
 
@@ -131,13 +135,15 @@ Time Taken
 """
 ```
 
-![Proof-of-work plot](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-1-proof-of-work.png)
+![Proof-of-work plot](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-8-proof-of-work-plot.png)
 
 Basic needs of such system of proof-of-work are fulfilled by cryptographic hashes, that are often seen as one way functions, i.e. the only way to get the input given an output is to use the bruteforce approach and check all possible values of inputs and arriving at the correct candidate.
 
 > A nonce is an arbitrary number that can only be used once
 
 In the bitcoin's timestamp network, the proof-of-work is implemented by incrementing a nonce in the block until a value is found that gives the block the required number of leading zero bits.
+
+![Proof-of-work Flow](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-3-proof-of-work.png)
 
 > Once the CPU effort has been expended to satisfy the proof-of-work, the block cannot be changed without redoing the work.
 
@@ -180,6 +186,8 @@ After the latest transaction is reinforced with several blocks stacking on top o
 
 > Transactions are hashed in a Merkle Tree, with only root included in the block's hash.
 
+![Memory Optimizations](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-4-merkle-tree.png)
+
 A block header with no transaction is about 80 bytes, and blocks are generated every 10 minutes, then every hour about 6 blocks would be generated. So the total space required by blocks generated in a year would be about 4.2MB (i.e 80 bytes * 6 * 24 * 365). With the current capabilities of system memories, storage would not pose a problem to the system.
 
 ### Payment Verification
@@ -187,6 +195,8 @@ A block header with no transaction is about 80 bytes, and blocks are generated e
 The system makes it possible to verify payments without running the full network node. 
 
 Verification can be done by keeping a copy of the block headers of the longest proof-of-work chain, and obtaining the Merkle branch linking the transaction to the block it's timestamped in.
+
+![Payment Verification Process](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-5-validating-transaction.png)
 
 By linking the transaction to a place in the chain, one can see if network nodes have accepted it by checking the proof-of-work, which would be further confirmed by blocks built on top of it in the chain.
 
@@ -198,11 +208,15 @@ Even though it is possible to handle each coin individually, it would be unweild
 
 > To allow value to be split and combined, transactions contain multiple inputs and outputs. 
 
+![Value Handling Protocols](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-6-splitting-and-joining.png)
+
 Usually, there is a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: **one for the payment, and one to return the change, if any, back to the sender**.
 
 ### Privacy
 
 Traditional banking models achieve privacy through limiting access to information to the parties involved and the trusted third party. 
+
+![Privacy Models](/assets/2017-12-21-bitcoin-satoshi-nakamoto/fig-7-privacy.png)
 
 In the proposed system, it is achieved by anonymizing the public keys that are used to sign a transaction. So, the public ledger can see someone is sending an amount to someone else, but without information linking the transaction to anyone (similar to tape in a stock exchange).
 
